@@ -34,11 +34,11 @@ function draw() {
   fill(200,50,85,145);
   rect(windowWidth/2 -330 , 1660, 660, 800, 20);
    
-  //fill(r,g,b);
- // rect(windowWidth/2 -200 , 1810, 400, 550, 20);
+  fill(200,20,155,102);
+  rect(windowWidth/2 -330 , 2480, 660, 800, 20);
    
-  //fill(r,g,b);
- // rect(windowWidth/2 -200 , 2410, 400, 550, 20);
+  fill(155,35,160);
+  rect(windowWidth/2 -330 , 3300, 660, 800, 20);
    
 //  fill(r,g,b);
 //  rect(windowWidth/2 -200 , 3010, 400, 550, 20);
