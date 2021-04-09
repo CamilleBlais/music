@@ -20,7 +20,7 @@ createCanvas(windowWidth, windowHeight);
 
 
 
-function draw() {
-   ellipse(50,50+i,50,50);
-   i=i+2;
+//function draw() {
+  // ellipse(50,50+i,50,50);
+  // i=i+2;
   }
