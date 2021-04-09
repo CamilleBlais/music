@@ -2,6 +2,7 @@
 //variables
 
 //var TikY = 0;
+var i = 0;
 
 
 function setup() {
