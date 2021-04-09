@@ -17,6 +17,6 @@ createCanvas(windowWidth, 3500);
 
 
 function draw() {
-  rect(windowWidth/2, 10, 55, 55, 20);
+  rect(windowWidth/2 -200 , 10, 400, 550, 20);
   
   }
