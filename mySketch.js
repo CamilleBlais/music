@@ -9,11 +9,6 @@ var b = 0;
 var a = 0;
 
 
-r = random(0,255);
-g = random(0,255);
-b = random(0,255);
-a = ramdom(0,255)
-
 ////////////////////////////
 
 
@@ -30,14 +25,14 @@ createCanvas(windowWidth, 8000);
 
 function draw() {
   noStroke();
-  fill(r-g,g-b,b-r,a);
-  rect(windowWidth/2 -400 , 30, 800, 1300, 20);
+  fill(100,50,145,200);
+  rect(windowWidth/2 -400 , 20, 800, 1300, 20);
    
-  fill(r,g,b);
-  rect(windowWidth/2 -400 , 830, 800, 1300, 20);
+ // fill(r,g,b);
+ // rect(windowWidth/2 -400 , 830, 800, 1300, 20);
   
-  fill(r,g,b);
-  rect(windowWidth/2 -400 , 1630, 800, 1300, 20);
+  //fill(r,g,b);
+  //rect(windowWidth/2 -400 , 1630, 800, 1300, 20);
    
   //fill(r,g,b);
  // rect(windowWidth/2 -200 , 1810, 400, 550, 20);
