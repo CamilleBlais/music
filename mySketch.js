@@ -26,13 +26,13 @@ createCanvas(windowWidth, 8000);
 function draw() {
   noStroke();
   fill(100,50,145,200);
-  rect(windowWidth/2 -400 , 20, 700, 900, 20);
+  rect(windowWidth/2 -330 , 20, 660, 800, 20);
    
- // fill(r,g,b);
- // rect(windowWidth/2 -400 , 830, 800, 1300, 20);
+  fill(120,50,15,155);
+  rect(windowWidth/2 -330 , 680, 660, 800, 20);
   
-  //fill(r,g,b);
-  //rect(windowWidth/2 -400 , 1630, 800, 1300, 20);
+  fill(200,50,85,145);
+  rect(windowWidth/2 -330 ,1320, 660, 800, 20);
    
   //fill(r,g,b);
  // rect(windowWidth/2 -200 , 1810, 400, 550, 20);
