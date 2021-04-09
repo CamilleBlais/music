@@ -8,7 +8,7 @@ var i = 0;
 function setup() {
 createCanvas(windowWidth, windowHeight);
    background(121,205,191,100);
-   frameRate(1);
+   frameRate(6);
   }
 
 
