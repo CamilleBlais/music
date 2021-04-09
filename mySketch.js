@@ -1,7 +1,7 @@
 
 //variables
 
-var TikY = 0;
+//var TikY = 0;
 
 
 function setup() {
@@ -12,12 +12,12 @@ createCanvas(windowWidth, windowHeight);
 
 ///Définitions de Fonctions 
 
-function FakeTiktok(windowWidth/2, TikY){
-}
+//function FakeTiktok(windowWidth/2, TikY){
+//}
 
 
 
 
 function draw() {
-   ellipse(1500, 100,180,180);
+   ellipse(1500,100,180,180);
   }
