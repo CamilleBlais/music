@@ -29,10 +29,10 @@ function draw() {
   rect(windowWidth/2 -330 , 20, 660, 800, 20);
    
   fill(120,50,15,155);
-  rect(windowWidth/2 -330 , 680, 660, 800, 20);
+  rect(windowWidth/2 -330 , 820, 660, 800, 20);
   
   fill(200,50,85,145);
-  rect(windowWidth/2 -330 ,1320, 660, 800, 20);
+  rect(windowWidth/2 -330 , 1620, 660, 800, 20);
    
   //fill(r,g,b);
  // rect(windowWidth/2 -200 , 1810, 400, 550, 20);
