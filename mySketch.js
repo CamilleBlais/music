@@ -19,5 +19,5 @@ createCanvas(windowWidth, windowHeight);
 
 
 function draw() {
-   ellipse(1500,100,180,180);
+   ellipse(50,50,50,50);
   }
