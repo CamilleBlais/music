@@ -6,7 +6,7 @@ var i = 0;
 
 
 function setup() {
-createCanvas(windowWidth, windowHeight);
+createCanvas(500, 3500);
    background(121,205,191,100);
    //frameRate(6);
   }
@@ -21,6 +21,6 @@ createCanvas(windowWidth, windowHeight);
 
 
 function draw() {
-  // ellipse(50,50+i,50,50);
-  // i=i+2;
+  ellipse(50,2500,50,50);
+  
   }
