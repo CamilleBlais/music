@@ -40,9 +40,19 @@ function draw() {
   fill(155,35,160);
   rect(windowWidth/2 -330 , 3300, 660, 800, 20);
    
-//  fill(r,g,b);
-//  rect(windowWidth/2 -200 , 3010, 400, 550, 20);
+  fill(160,20,25,120);
+  rect(windowWidth/2 -330 , 4120, 660, 800, 20);
    
-//  fill(r,g,b);
-//  rect(windowWidth/2 -200 , 3610, 400, 550, 20);
+  fill(100,200,55,125);
+  rect(windowWidth/2 -330 , 4940, 660, 800, 20);
+   
+  fill(100,200,55,125);
+  rect(windowWidth/2 -330 , 5760, 660, 800, 20);
+   
+  fill(222,22,22,122);
+  rect(windowWidth/2 -330 , 6580, 660, 800, 20);
+   
+  fill(22,22,220,220);
+  rect(windowWidth/2 -330 , 7400, 660, 800, 20);
+   
   }
