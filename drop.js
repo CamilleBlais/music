@@ -6,7 +6,7 @@
 
 function Drop() {
   this.x = random(width);
-  this.y = random(-50, 9000);
+  this.y = random(-9000, -50);
   this.len = random(5, 20);
   this.yspeed = random(2,8);
 
