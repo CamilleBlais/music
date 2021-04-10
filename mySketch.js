@@ -13,7 +13,7 @@ var a = 0;
 
 
 function setup() {
-createCanvas(windowWidth, 8000);
+createCanvas(windowWidth, 10040);
    background(121,205,191,100);
    //frameRate(6);
   }
@@ -54,5 +54,8 @@ function draw() {
    
   fill(22,22,220,220);
   rect(windowWidth/2 -330 , 7400, 660, 800, 20);
+   
+  fill(221,22,220,22);
+  rect(windowWidth/2 -330 , 8220, 660, 800, 20);
    
   }
