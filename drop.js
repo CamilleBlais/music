@@ -6,7 +6,7 @@
 
 function Drop() {
   this.x = random(width);
-  this.y = random(-50, 3000);
+  this.y = random(-50, 9000);
   this.len = random(5, 20);
   this.yspeed = random(2,8);
 
@@ -15,7 +15,7 @@ function Drop() {
     this.yspeed = this.yspeed + 0.2;
 
     if (this.y > height) {
-      this.y = random(-2400, -50);
+      this.y = random(-9000, -50);
       this.yspeed = random(2,8);
     }
   }
@@ -26,8 +26,6 @@ function Drop() {
     stroke(131, 192, 247,150);
     line(this.x, this.y, this.x, this.y+this.len);
     
-    strokeWeight(2);
-    stroke(131, 192, 247,150);
-    line(this.x, this.y, this.x, this.y+500+this.len);
+  
   }
 }
