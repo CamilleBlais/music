@@ -15,7 +15,7 @@ var drops = [];
 function setup() {
 createCanvas(windowWidth, 9040);
    background(121,205,191,100);
-   frameRate(30);
+   
   
    
 
@@ -28,7 +28,7 @@ for (var i = 0; i < 1000; i++) {    //light rain
 }
 
 function draw() {
-   
+   frameRate(30);
    
    for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
