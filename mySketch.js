@@ -19,7 +19,7 @@ createCanvas(windowWidth, 9040);
   
    
 
-for (var i = 0; i < 8000; i++) {    //light rain
+for (var i = 0; i < 7000; i++) {    //light rain
     	drops[i] = new Drop();
   	}
 
