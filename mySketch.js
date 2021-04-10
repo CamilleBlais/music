@@ -13,7 +13,7 @@ var a = 0;
 
 
 function setup() {
-createCanvas(windowWidth, 10040);
+createCanvas(windowWidth, 9040);
    background(121,205,191,100);
    //frameRate(6);
   }
