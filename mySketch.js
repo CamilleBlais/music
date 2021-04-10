@@ -14,7 +14,7 @@ var drops = [];
 
 function setup() {
 createCanvas(windowWidth, 9040);
-   frameRate(4);
+   
   
    
 
