@@ -15,8 +15,8 @@ function Drop() {
     this.yspeed = this.yspeed + 0.5;
 
     if (this.y > height) {
-      this.y = random(-200, -100);
-      this.yspeed = random(10,20);
+      this.y = random(-100, 300);
+      this.yspeed = random(2,15);
     }
   }
 
