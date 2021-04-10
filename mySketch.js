@@ -1,13 +1,13 @@
 
 //////////////variables
 
-//var TikY = 0;
 var i = 0;
 var r = 0;
 var g = 0;
 var b = 0;
 var a = 0;
 
+var drops = [];
 
 ////////////////////////////
 
@@ -16,14 +16,27 @@ function setup() {
 createCanvas(windowWidth, 9040);
    background(121,205,191,100);
    //frameRate(6);
-  }
+  
+   
+
+for (var i = 0; i < 1000; i++) {    //light rain
+    	drops[i] = new Drop();
+  	}
 
 
-
-
-
+   
+}
 
 function draw() {
+   
+   
+   for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+         drops[i].show();
+  	}
+   
+   
+   
   noStroke();
   fill(100,50,145,200);
   rect(windowWidth/2 -330 , 20, 660, 800, 20);
