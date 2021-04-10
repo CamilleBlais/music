@@ -28,6 +28,6 @@ function Drop() {
     
     strokeWeight(2);
     stroke(131, 192, 247,150);
-    line(this.x, this.y, this.x, this.y+this.len-500);
+    line(this.x, this.y, this.x, this.y+500+this.len);
   }
 }
