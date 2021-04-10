@@ -27,7 +27,7 @@ for (var i = 0; i < 1000; i++) {    //light rain
 }
 
 function draw() {
-   background(121,205,191,100);
+   background(33,33,33);
    
    for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
