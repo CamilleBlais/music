@@ -8,7 +8,7 @@ var b = 0;
 var a = 0;
 
 var drops = [];
-//var drops2 = [];
+
 
 ////////////////////////////
 
@@ -19,7 +19,7 @@ createCanvas(windowWidth, 9040);
   
    
 
-for (var i = 0; i < 10000; i++) {    //light rain
+for (var i = 0; i < 8000; i++) {    //light rain
     	drops[i] = new Drop();
   	}
 
