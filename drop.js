@@ -6,13 +6,13 @@
 
 function Drop() {
   this.x = random(width);
-  this.y = random(-50, 2500);
+  this.y = random(-50, 3000);
   this.len = random(5, 20);
-  this.yspeed = random(10,20);
+  this.yspeed = random(2,8);
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    this.yspeed = this.yspeed + 0.5;
+    this.yspeed = this.yspeed + 0.2;
 
     if (this.y > height) {
       this.y = random(-2400, -50);
