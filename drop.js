@@ -12,7 +12,7 @@ function Drop() {
 
   this.fall = function() {
     this.y = this.y + this.yspeed;
-    this.yspeed = this.yspeed + 0.09;
+    this.yspeed = this.yspeed + 0.001;
 
     if (this.y > height) {
       this.y = random(-10000, -10);
