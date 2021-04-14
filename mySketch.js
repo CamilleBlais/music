@@ -7,30 +7,35 @@ var song;
 //var drops = [];
 
 
-////////////////////////////fonction preload""""
-
-function preload(){
-   song = loadSound("SON01.mp3");
-}
-
 
 
 ////////////////////////////fonction setup"""""
 
 
-function setup() {
+function setup(){
 createCanvas(windowWidth, 9040);
-   
-song.play();
+
+song = loadSound("SON01.mp3");  
+
    
 
 //for (var i = 0; i < 7000; i++) {    //light rain
 //    	drops[i] = new Drop();
+   
   	}
 
 
-   
+
+
+//////////////////////////////////////fonction loaded
+
+function loaded() {
+song.play();
 }
+
+
+
+
 //////////////////////// fonction draw
 
 function draw() {
