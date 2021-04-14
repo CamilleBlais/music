@@ -2,7 +2,7 @@
 //////////////variables
 
 var i = 0;
-//var song;
+var song;
 
 //var drops = [];
 
@@ -15,7 +15,7 @@ var i = 0;
 function setup(){
 createCanvas(windowWidth, 9040);
 
-//song = loadSound("SON01.mp3");  
+song = loadSound("SON01.mp3", loaded);  
 
    
 
@@ -29,9 +29,9 @@ createCanvas(windowWidth, 9040);
 
 //////////////////////////////////////fonction loaded
 
-//function loaded() {
-//song.play();
-//}
+function loaded() {
+song.play();
+}
 
 
 
