@@ -2,21 +2,26 @@
 //////////////variables
 
 var i = 0;
-var r = 0;
-var g = 0;
-var b = 0;
-var a = 0;
+var son01;
 
 var drops = [];
 
 
-////////////////////////////
+////////////////////////////fonction preload""""
+
+function preload(){
+   son01 = loadSound("SON01.wav");
+}
+
+
+
+////////////////////////////fonction setup"""""
 
 
 function setup() {
 createCanvas(windowWidth, 9040);
    
-  
+son01.play();
    
 
 for (var i = 0; i < 7000; i++) {    //light rain
@@ -26,6 +31,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
 
    
 }
+//////////////////////// fonction draw
 
 function draw() {
    background(33,33,33);
