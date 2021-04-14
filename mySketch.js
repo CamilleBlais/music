@@ -15,7 +15,7 @@ var song;
 function setup(){
 createCanvas(windowWidth, 9040);
 
-song = loadSound("SON01.mp3", loaded);  
+song = loadSound('SON01.mp3', loaded);  
 
    
 
