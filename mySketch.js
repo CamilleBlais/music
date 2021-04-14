@@ -1,6 +1,6 @@
 
 var i = 0;
-//var son1;
+var son1;
 
 //var drops = [];
 
@@ -12,7 +12,7 @@ var i = 0;
 function setup(){
 createCanvas(windowWidth, 9040);
 
-//son1 = loadSound('SON01.wav', loaded);
+son1 = loadSound('SON01.wav', loaded);
 
 //for (var i = 0; i < 7000; i++) {    //light rain
 //    	drops[i] = new Drop();
@@ -20,7 +20,7 @@ createCanvas(windowWidth, 9040);
   	}
 //////////////////////////////////////////fonction loaded
 function loaded() {
-//son1.play();
+son1.play();
 }
 
 
