@@ -2,15 +2,15 @@
 //////////////variables
 
 var i = 0;
-var son01;
+var song;
 
-var drops = [];
+//var drops = [];
 
 
 ////////////////////////////fonction preload""""
 
 function preload(){
-   son01 = loadSound("SON01.mp3");
+   song = loadSound("SON01.mp3");
 }
 
 
@@ -21,11 +21,11 @@ function preload(){
 function setup() {
 createCanvas(windowWidth, 9040);
    
-son01.play();
+song.play();
    
 
-for (var i = 0; i < 7000; i++) {    //light rain
-    	drops[i] = new Drop();
+//for (var i = 0; i < 7000; i++) {    //light rain
+//    	drops[i] = new Drop();
   	}
 
 
@@ -36,9 +36,9 @@ for (var i = 0; i < 7000; i++) {    //light rain
 function draw() {
    background(33,33,33);
    
-   for (var i = 0; i < drops.length; i++) {
-         drops[i].fall();
-         drops[i].show();
+//   for (var i = 0; i < drops.length; i++) {
+ //        drops[i].fall();
+ //        drops[i].show();
   	}
    
    
