@@ -10,7 +10,7 @@ var drops = [];
 ////////////////////////////fonction preload""""
 
 function preload(){
-   son01 = loadSound("SON01.wav");
+   son01 = loadSound("SON01.mp3");
 }
 
 
