@@ -12,7 +12,11 @@ var rect8 = 0;
 var rect9 = 0;
 var rect10 = 0;
 var rect11 = 0;
-
+var rectX = 0;
+var rect1Y = 0;
+var rect2Y = 0;
+var rectXX = 0;
+var rectYY = 0;
 
 //var drops = [];
 
@@ -27,11 +31,11 @@ function setup(){
 createCanvas(windowWidth, 9040);
 background(33,33,33);	
 	
-var rectX = windowWidth/2 -330;
-var rect1Y = 20;
-var rect2Y = 840;
-var rectXX = 660;
-var rectYY = 800;
+rectX = windowWidth/2 -330;
+rect1Y = 20;
+vrect2Y = 840;
+vrectXX = 660;
+rectYY = 800;
 	
 ///////////////////////////////////////////////////// definition des fonctions rect
 
