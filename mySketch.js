@@ -1,7 +1,11 @@
 ///////////////////////////////variables
 var i = 0;
 var son1;
-
+var rectX = windowWidth/2 -330;
+var rect1Y = 20;
+var rect2Y = 840;
+var rectXX = 660;
+var rectYY = 800;
 //var drops = [];
 
 
@@ -35,11 +39,18 @@ son1.play();
 ///////////////////////////////////////////////////// definition des fonctions rect
 
 
-function rect1(rect1X, rect1Y){
+function rect1(rectX, rect1Y,rectXX, rectYY){
   noStroke();
   fill(100,50,145);
-  rect(windowWidth/2 -330, 20, 660, 800, 20);
+  rect(rectX, rect1Y, rectXX, rectYY, 20);
 	}
+
+function rect2(rectX, rect2Y,rectXX, rectYY){
+  noStroke();
+  fill(120,50,15);
+  rect(rectX, rect2Y, rectXX, rectYY, 20);
+	}
+
 
 /////////////////////////////// fonction draw
 
@@ -51,11 +62,10 @@ function draw() {
  //        drops[i].show();
  
   rect1();
-   
+  rect2();
+	
   noStroke();
-   
-  fill(120,50,15,155);
-  rect(windowWidth/2 -330 , 840, 660, 800, 20);
+  
   
   fill(200,50,85,145);
   rect(windowWidth/2 -330 , 1660, 660, 800, 20);
@@ -86,7 +96,7 @@ function draw() {
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
-//if() {
+if(mouseX) {
 //noStroke();
 //fill(35,35,35,255);
 // rect(windowWidth/2 -330 , 20, 660, 800, 20);	
