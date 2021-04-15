@@ -13,13 +13,28 @@ var son1;
 
 function setup(){
 createCanvas(windowWidth, 9040);
+background(33,33,33);	
 	
-	
- var rectX = windowWidth/2 -330;
+var rectX = windowWidth/2 -330;
 var rect1Y = 20;
 var rect2Y = 840;
 var rectXX = 660;
 var rectYY = 800;
+	
+///////////////////////////////////////////////////// definition des fonctions rect
+
+
+function rect1(rectX, rect1Y,rectXX, rectYY){
+  noStroke();
+  fill(100,50,145);
+  rect(rectX, rect1Y, rectXX, rectYY, 20);
+	}
+
+function rect2(rectX, rect2Y,rectXX, rectYY){
+  noStroke();
+  fill(120,50,15);
+  rect(rectX, rect2Y, rectXX, rectYY, 20);
+	}
 	
 	
 	
@@ -41,31 +56,18 @@ function loaded() {
 son1.play();
 	}
 
-///////////////////////////////////////////////////// definition des fonctions rect
-
-
-function rect1(rectX, rect1Y,rectXX, rectYY){
-  noStroke();
-  fill(100,50,145);
-  rect(rectX, rect1Y, rectXX, rectYY, 20);
-	}
-
-function rect2(rectX, rect2Y,rectXX, rectYY){
-  noStroke();
-  fill(120,50,15);
-  rect(rectX, rect2Y, rectXX, rectYY, 20);
-	}
 
 
 /////////////////////////////// fonction draw
 
 function draw() {
-   background(33,33,33);
+   
    
 //   for (var i = 0; i < drops.length; i++) {
  //        drops[i].fall();
  //        drops[i].show();
- 
+
+
   rect1();
   rect2();
 	
