@@ -12,7 +12,7 @@ var rect8;
 var rect9;
 var rect10;
 var rect11;
-var rectX = 0;
+var rectX = windowWidth/2 -330;
 var rect1Y = 0;
 var rect2Y = 0;
 var rectXX = 660;
@@ -79,7 +79,7 @@ function draw() {
  //        drops[i].show();
 
 
-  rect1(windowWidth/2 -330,20);
+  rect1(rectX,20);
   rect2(windowWidth/2 -330,840);
 	
   noStroke();
