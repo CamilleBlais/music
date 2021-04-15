@@ -1,4 +1,4 @@
-
+///////////////////////////////variables
 var i = 0;
 var son1;
 
@@ -9,7 +9,7 @@ var son1;
 
 
 
-
+////////////////////////////////////////////fonction setup
 
 function setup(){
 createCanvas(windowWidth, 9040);
@@ -23,15 +23,25 @@ son1 = loadSound("SON01.wav", loaded);
    
   	}
 
+
+
 ////////////////////////////fonction loaded"""""
 
 
 function loaded() {
 son1.play();
-}
+	}
+
+///////////////////////////////////////////////////// definition des fonctions rect
 
 
-//////////////////////// fonction draw
+function rect1(rect1X, rect1Y){
+  noStroke();
+  fill(100,50,145);
+  rect(windowWidth/2 -330, 20, 660, 800, 20);
+	}
+
+/////////////////////////////// fonction draw
 
 function draw() {
    background(33,33,33);
@@ -40,11 +50,9 @@ function draw() {
  //        drops[i].fall();
  //        drops[i].show();
  
-   
+  rect1();
    
   noStroke();
-  fill(100,50,145);
-  rect(windowWidth/2 -330 , 20, 660, 800, 20);
    
   fill(120,50,15,155);
   rect(windowWidth/2 -330 , 840, 660, 800, 20);
@@ -76,18 +84,15 @@ function draw() {
   fill(221,22,220,22);
   rect(windowWidth/2 -330 , 8220, 660, 800, 20);
    
-  }
+  ///////////////////////////////////////////////////////////////if mouse hover
 
-///////////////////////moussedragged
-
-function mouseDragged() {
+if() {
 noStroke();
 fill(35,35,35,255);
- rect(windowWidth/2 -330 , 20, 660, 800, 20);
-	return false;
+ rect(windowWidth/2 -330 , 20, 660, 800, 20);	
 }
 
-
+}
 
 
 
