@@ -1,17 +1,17 @@
 ///////////////////////////////variables
 var i = 0;
 var son1;
-var rect1 = 0;
-var rect2 = 0;
-var rect3 = 0;
-var rect4 = 0;
-var rect5 = 0;
-var rect6 = 0;
-var rect7 = 0;
-var rect8 = 0;
-var rect9 = 0;
-var rect10 = 0;
-var rect11 = 0;
+var rect1;
+var rect2;
+var rect3;
+var rect4;
+var rect5;
+var rect6;
+var rect7;
+var rect8;
+var rect9;
+var rect10;
+var rect11;
 var rectX = 0;
 var rect1Y = 0;
 var rect2Y = 0;
