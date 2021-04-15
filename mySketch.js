@@ -96,7 +96,7 @@ function draw() {
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
-if(mouseX) {
+//if(mouseX) {
 //noStroke();
 //fill(35,35,35,255);
 // rect(windowWidth/2 -330 , 20, 660, 800, 20);	
