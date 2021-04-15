@@ -23,8 +23,6 @@ var rectYY = 0;
 
 
 
-
-
 ////////////////////////////////////////////fonction setup
 
 function setup(){
@@ -37,9 +35,21 @@ vrect2Y = 840;
 vrectXX = 660;
 rectYY = 800;
 	
+
+	
+son1 = loadSound("SON01.wav", loaded);
+
+
+
+//for (var i = 0; i < 7000; i++) {    //light rain
+//    	drops[i] = new Drop();
+   
+  	}
+
+
 ///////////////////////////////////////////////////// definition des fonctions rect
 
-
+	
 function rect1(rectX, rect1Y,rectXX, rectYY){
   noStroke();
   fill(100,50,145);
@@ -51,17 +61,6 @@ function rect2(rectX, rect2Y,rectXX, rectYY){
   fill(120,50,15);
   rect(rectX, rect2Y, rectXX, rectYY, 20);
 	}
-	
-	
-	
-son1 = loadSound("SON01.wav", loaded);
-
-
-
-//for (var i = 0; i < 7000; i++) {    //light rain
-//    	drops[i] = new Drop();
-   
-  	}
 
 
 
