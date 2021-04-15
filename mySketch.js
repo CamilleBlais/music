@@ -50,7 +50,7 @@ son1 = loadSound("SON01.wav", loaded);
 ///////////////////////////////////////////////////// definition des fonctions rect
 
 	
-function rect1(rectX, rect1Y,rectXX, rectYY){
+function rect1(rectX, rect1Y){
   noStroke();
   fill(100,50,145);
   rect(rectX, rect1Y, rectXX, rectYY, 20);
@@ -83,7 +83,7 @@ function draw() {
  //        drops[i].show();
 
 
-  rect1();
+  rect1(windowWidth/2 -330,20);
   rect2();
 	
   noStroke();
