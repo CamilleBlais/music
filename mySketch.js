@@ -72,3 +72,9 @@ function draw() {
   rect(windowWidth/2 -330 , 8220, 660, 800, 20);
    
   }
+
+function touchStarted() {
+  if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+  }
+}
