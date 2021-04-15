@@ -43,7 +43,7 @@ function draw() {
    
    
   noStroke();
-  fill(100,50,145,200);
+  fill(100,50,145);
   rect(windowWidth/2 -330 , 20, 660, 800, 20);
    
   fill(120,50,15,155);
@@ -81,8 +81,9 @@ function draw() {
 ///////////////////////moussedragged
 
 function mouseDragged() {
-fill(35,35,35,50);
-  rect(windowWidth/2 -330 , 20, 660, 800, 20);
+noStroke();
+fill(35,35,35,255);
+ rect(windowWidth/2 -330 , 20, 660, 800, 20);
 	return false;
 }
 
