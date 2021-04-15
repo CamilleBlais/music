@@ -1,11 +1,7 @@
 ///////////////////////////////variables
 var i = 0;
 var son1;
-var rectX = windowWidth/2 -330;
-var rect1Y = 20;
-var rect2Y = 840;
-var rectXX = 660;
-var rectYY = 800;
+
 //var drops = [];
 
 
@@ -17,7 +13,16 @@ var rectYY = 800;
 
 function setup(){
 createCanvas(windowWidth, 9040);
-   
+	
+	
+ var rectX = windowWidth/2 -330;
+var rect1Y = 20;
+var rect2Y = 840;
+var rectXX = 660;
+var rectYY = 800;
+	
+	
+	
 son1 = loadSound("SON01.wav", loaded);
 
 
