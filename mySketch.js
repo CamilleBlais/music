@@ -15,6 +15,15 @@ var rect11;
 var rectX = 0;
 var rect1Y = 0;
 var rect2Y = 0;
+var rect3Y = 0;
+var rect4Y = 0;
+var rect5Y = 0;
+var rect6Y = 0;
+var rect7Y = 0;
+var rect8Y = 0;
+var rect9Y = 0;
+var rect10Y = 0;
+var rect11Y = 0;
 var rectXX = 660;
 var rectYY = 800;
 
@@ -56,6 +65,24 @@ function rect2(rectX, rect2Y){
   rect(rectX, rect2Y, rectXX, rectYY, 20);
 	}
 
+function rect3(rectX, rect3Y){
+  noStroke();
+  fill(200,50,85);
+  rect(rectX, rect3Y, rectXX, rectYY, 20);
+	}
+
+function rect4(rectX, rect4Y){
+  noStroke();
+  fill(200,20,155);
+  rect(rectX, rect4Y, rectXX, rectYY, 20);
+	}
+
+function rect5(rectX, rect5Y){
+  noStroke();
+  fill(155,35,160);
+  rect(rectX, rect5Y, rectXX, rectYY, 20);
+	}
+
 
 
 ////////////////////////////fonction loaded"""""
@@ -80,20 +107,12 @@ function draw() {
 
 
   rect1(rectX,20);
-  rect2(windowWidth/2 -330,840);
+  rect2(rectx,840);
+  rect3(rectx,1660);
+  rect4(rectx,2480);
+  rect5(rectx,3300);
 	
   noStroke();
-  
-  
-  fill(200,50,85,145);
-  rect(windowWidth/2 -330 , 1660, 660, 800, 20);
-   
-  fill(200,20,155,102);
-  rect(windowWidth/2 -330 , 2480, 660, 800, 20);
-   
-  fill(155,35,160);
-  rect(windowWidth/2 -330 , 3300, 660, 800, 20);
-   
   fill(160,20,25,120);
   rect(windowWidth/2 -330 , 4120, 660, 800, 20);
    
