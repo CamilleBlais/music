@@ -12,7 +12,7 @@ var rect8;
 var rect9;
 var rect10;
 var rect11;
-var rectX = windowWidth/2 -330;
+var rectX = 0;
 var rect1Y = 0;
 var rect2Y = 0;
 var rectXX = 660;
@@ -29,7 +29,7 @@ function setup(){
 createCanvas(windowWidth, 9040);
 background(33,33,33);	
 	
-
+rectX = windowWidth/2 -330;
 	
 son1 = loadSound("SON01.wav", loaded);
 
