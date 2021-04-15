@@ -78,6 +78,21 @@ function draw() {
    
   }
 
+///////////////////////moussedragged
+
+function mouseDragged() {
+fill(35,35,35,50);
+  rect(windowWidth/2 -330 , 20, 660, 800, 20);
+	return false;
+}
+
+
+
+
+
+
+//////////////////////////////////////fonction touchstarted
+
 function touchStarted() {
   if (getAudioContext().state !== 'running') {
     getAudioContext().resume();
