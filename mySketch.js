@@ -53,34 +53,8 @@ son1 = loadSound("SON01.wav", loaded);
 ///////////////////////////////////////////////////// definition des fonctions rect
 
 	
-function rect1(rectX, rect1Y){
-  noStroke();
-  fill(100,50,145);
-  rect(rectX, rect1Y, rectXX, rectYY, 20);
-	}
-
-function rect2(rectX, rect2Y){
-  noStroke();
-  fill(120,50,15);
-  rect(rectX, rect2Y, rectXX, rectYY, 20);
-	}
-
-function rect3(rectX, rect3Y){
-  noStroke();
-  fill(200,50,85);
-  rect(rectX, rect3Y, rectXX, rectYY, 20);
-	}
-
-function rect4(rectX, rect4Y){
-  noStroke();
-  fill(200,20,155);
-  rect(rectX, rect4Y, rectXX, rectYY, 20);
-	}
-
-function rect5(rectX, rect5Y){
-  noStroke();
-  fill(155,35,160);
-  rect(rectX, rect5Y, rectXX, rectYY, 20);
+function rect1(rectX, rectY){
+  rect(rectX, rectY, rectXX, rectYY, 20);
 	}
 
 
@@ -98,38 +72,48 @@ son1.play();
 
 function draw() {
    
-	
-	
+
    
 //   for (var i = 0; i < drops.length; i++) {
  //        drops[i].fall();
  //        drops[i].show();
-
-
-  rect1(rectX,20);
-  rect2(rectx,840);
-  rect3(rectx,1660);
-  rect4(rectx,2480);
-  rect5(rectx,3300);
+	
 	
   noStroke();
-  fill(160,20,25,120);
-  rect(windowWidth/2 -330 , 4120, 660, 800, 20);
+	
+  fill(125,55,125);
+  rect1(rectX,20);
+	
+  fill(25,111,159);
+  rect1(rectX,840);
+	
+  fill(125,35,200);
+  rect1(rectX,1660);
+	
+  fill(25,126,200);
+  rect1(rectX,2480);
+	
+  fill(225,10,156);
+  rect1(rectX,3300);
+	
+  
+  fill(160,20,25);
+  rect1(rectX, 4120);
    
-  fill(100,200,55,125);
-  rect(windowWidth/2 -330 , 4940, 660, 800, 20);
+  fill(100,200,55);
+  rect1(rectX, 4940);
    
-  fill(100,200,55,125);
-  rect(windowWidth/2 -330 , 5760, 660, 800, 20);
+  fill(100,200,55);
+  rect1(rectX, 5760);
    
-  fill(222,22,22,122);
-  rect(windowWidth/2 -330 , 6580, 660, 800, 20);
+  fill(222,22,22);
+  rect1(rectX, 6580);
    
-  fill(22,22,220,220);
-  rect(windowWidth/2 -330 , 7400, 660, 800, 20);
+  fill(22,22,220);
+  rect1(rectX, 7400);
    
-  fill(221,22,220,22);
-  rect(windowWidth/2 -330 , 8220, 660, 800, 20);
+  fill(221,22,220);
+  rect1(rectX, 8220);
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
