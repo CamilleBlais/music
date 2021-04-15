@@ -6,24 +6,29 @@ var son1;
 
 
 
-////////////////////////////fonction preload"""""
-function preload() {
-son1 = loadSound("SON01.wav");
-}
+
 
 
 
 
 function setup(){
 createCanvas(windowWidth, 9040);
+   
+son1 = loadSound("SON01.wav", loaded);
 
-son1.play();
+
 
 //for (var i = 0; i < 7000; i++) {    //light rain
 //    	drops[i] = new Drop();
    
   	}
 
+////////////////////////////fonction loaded"""""
+
+
+function loaded() {
+son1.play();
+}
 
 
 //////////////////////// fonction draw
