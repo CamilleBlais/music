@@ -15,8 +15,8 @@ var rect11;
 var rectX = 0;
 var rect1Y = 0;
 var rect2Y = 0;
-var rectXX = 0;
-var rectYY = 0;
+var rectXX = 660;
+var rectYY = 800;
 
 //var drops = [];
 
@@ -71,10 +71,6 @@ son1.play();
 
 function draw() {
    
-	
-
-rectXX = 660;
-rectYY = 800;
 	
 	
    
