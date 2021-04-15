@@ -29,12 +29,6 @@ function setup(){
 createCanvas(windowWidth, 9040);
 background(33,33,33);	
 	
-rectX = windowWidth/2 -330;
-rect1Y = 20;
-vrect2Y = 840;
-vrectXX = 660;
-rectYY = 800;
-	
 
 	
 son1 = loadSound("SON01.wav", loaded);
@@ -56,7 +50,7 @@ function rect1(rectX, rect1Y){
   rect(rectX, rect1Y, rectXX, rectYY, 20);
 	}
 
-function rect2(rectX, rect2Y,rectXX, rectYY){
+function rect2(rectX, rect2Y){
   noStroke();
   fill(120,50,15);
   rect(rectX, rect2Y, rectXX, rectYY, 20);
@@ -77,6 +71,12 @@ son1.play();
 
 function draw() {
    
+	
+
+rectXX = 660;
+rectYY = 800;
+	
+	
    
 //   for (var i = 0; i < drops.length; i++) {
  //        drops[i].fall();
@@ -84,7 +84,7 @@ function draw() {
 
 
   rect1(windowWidth/2 -330,20);
-  rect2();
+  rect2(windowWidth/2 -330,840);
 	
   noStroke();
   
