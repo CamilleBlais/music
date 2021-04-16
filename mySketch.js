@@ -8,7 +8,7 @@ var rectXX = 660;
 var rectYY = 800;
 var bouton = false;
 
-//var drops = [];
+var drops = [];
 
 
 
@@ -25,8 +25,8 @@ son1 = loadSound("SON01.wav", loaded);
 
 
 
-//for (var i = 0; i < 7000; i++) {    //light rain
-//    	drops[i] = new Drop();
+for (var i = 0; i < 7000; i++) {    //light rain
+   	drops[i] = new Drop();
    
   	}
 
@@ -55,9 +55,9 @@ function draw() {
    
 
    
-//   for (var i = 0; i < drops.length; i++) {
- //        drops[i].fall();
- //        drops[i].show();
+for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+         drops[i].show();
 	
 	
   
