@@ -177,15 +177,7 @@ stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,8220);
 }
-/////////////////////////////////////////ifSONG
-	
-if(bouton=false){
 
-	}
-if(bouton=true){
-	son1.loop();
-	}
-	
 
 } //end of draw
 
