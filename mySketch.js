@@ -7,6 +7,8 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 var bouton = false;
+var mouseX;
+var mouseY;
 
 var drops = [];
 
@@ -29,8 +31,16 @@ for (var i = 0; i < 7000; i++) {    //light rain
   	}
 
 }
+//////////////////////////////////////////////////////////////////////////////boolean
 
-
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if (mousePressed){
+	bouton = true;
+        }
+	if(mousePressed){
+	bouton = false;
+        }
+}
 
 /////////////////////////////// fonction draw
 
@@ -106,11 +116,11 @@ rect1(rectX,20);
 	if(bouton=true){
 	son1.loop();
 	}
-	if(bouton=false){
-	son1.pause();
-	}
 }	
-
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+if(bouton=false){
+son1.pause();
+	}}
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 noFill();
@@ -185,17 +195,7 @@ rect1(rectX,8220);
 
 }
 
-//////////////////////////////////////////////////////////////////////////////////mousepressedfonctiuons hors de draw
 
-
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if (mousePressed){
-	bouton = true;
-        }
-	if(mousePressed){
-	bouton = false;
-        }
-}
 
 
 
