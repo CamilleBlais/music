@@ -27,7 +27,6 @@ son1 = loadSound("SON01.wav", loaded);
 
 for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
-   
   	}
 
 
@@ -47,7 +46,7 @@ function loaded() {
 son1.play();
 	}
 
-
+}
 
 /////////////////////////////// fonction draw
 
