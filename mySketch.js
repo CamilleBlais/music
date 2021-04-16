@@ -191,7 +191,7 @@ function mousePressed(){
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	bouton = !bouton;
 }
-
+}
 
 
 //////////////////////////////////////fonction touchstarted
