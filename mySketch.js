@@ -178,13 +178,9 @@ stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,8220);
 }
-
-
-} //end of draw
-
-
+	
+	
 //////////////////////////////////////////////////////////////////////////////boolean
-
 
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
@@ -196,6 +192,15 @@ rect1(rectX,8220);
 	bouton = true;
         }
 }}
+	
+	
+} //end of draw
+
+
+
+
+
+
 
 
 //////////////////////////////////////fonction touchstarted
