@@ -6,7 +6,8 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
-var bouton = false;
+let bouton = false;
+
 var mouseX;
 var mouseY;
 
@@ -15,15 +16,13 @@ var drops = [];
 //////////////////////////////fonction preload
 
 
-function preload(){
-son1 = loadSound("SON01.wav");	
-}
 
 ////////////////////////////////////////////fonction setup
 
 function setup(){
 createCanvas(windowWidth, 9040);
-	
+
+son1 = createAudio("SON01.wav");
 	
 rectX = windowWidth/2 -330;
 
@@ -181,7 +180,7 @@ rect1(rectX,8220);
 /////////////////////////////////////////ifSONG
 	
 if(bouton=false){
-son1.pause();
+
 	}
 if(bouton=true){
 	son1.loop();
@@ -193,9 +192,15 @@ if(bouton=true){
 
 //////////////////////////////////////////////////////////////////////////////boolean
 
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if (mousePressed){
-	bouton = !bouton;
+
+	function mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+		if(bouton){
+		son1.pause();
+		}
+		else{
+	son1.loop();
+	bouton = true;
         }
 }
 
