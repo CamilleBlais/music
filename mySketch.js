@@ -96,7 +96,7 @@ function draw() {
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
-if(mouseX > rectX-330 && mouseX < rectX+330 && mouseY > 20 && mouseY < 820){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 fill(255,255,255);
 rect(windowWidth/2 -330 , 20, 660, 800, 20);	
 }
