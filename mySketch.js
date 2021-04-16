@@ -12,7 +12,12 @@ var mouseY;
 
 var drops = [];
 
+//////////////////////////////fonction preload
 
+
+function preload(){
+son1 = loadSound("SON01.wav");	
+}
 
 ////////////////////////////////////////////fonction setup
 
@@ -21,9 +26,6 @@ createCanvas(windowWidth, 9040);
 	
 	
 rectX = windowWidth/2 -330;
-	
-son1 = loadSound("SON01.wav");
-
 
 
 for (var i = 0; i < 7000; i++) {    //light rain
