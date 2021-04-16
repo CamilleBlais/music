@@ -99,21 +99,28 @@ function draw() {
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 noFill();
 stroke(200,200,200,140);
-strokeWeight(15);
+strokeWeight(20);
 stroke(200,200,200,100);
 strokeWeight(5);
-rect(windowWidth/2 -330 , 20, 660, 800, 20);	
+rect1(rectX,20);
+else{
+noStroke();
+    }
 }
 	
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 820 && mouseY < 1640){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 noFill();
 stroke(200,200,200,140);
-strokeWeight(15);
+strokeWeight(25);
 stroke(200,200,200,100);
 strokeWeight(5);
-rect(windowWidth/2 -330 , 20, 660, 800, 20);	
+rect1(rectX,840);
+else{
+noStroke();
+    }
 }
 
+	
 }
 
 
