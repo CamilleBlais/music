@@ -2,28 +2,8 @@
 var i = 0;
 var son1;
 var rect1;
-var rect2;
-var rect3;
-var rect4;
-var rect5;
-var rect6;
-var rect7;
-var rect8;
-var rect9;
-var rect10;
-var rect11;
-var rectX = 0;
-var rect1Y = 0;
-var rect2Y = 0;
-var rect3Y = 0;
-var rect4Y = 0;
-var rect5Y = 0;
-var rect6Y = 0;
-var rect7Y = 0;
-var rect8Y = 0;
-var rect9Y = 0;
-var rect10Y = 0;
-var rect11Y = 0;
+var rectX;
+var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
@@ -95,7 +75,6 @@ function draw() {
 	
   fill(225,10,156);
   rect1(rectX,3300);
-	
   
   fill(160,20,25);
   rect1(rectX, 4120);
@@ -117,11 +96,10 @@ function draw() {
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
-//if(mouseX) {
-//noStroke();
-//fill(35,35,35,255);
-// rect(windowWidth/2 -330 , 20, 660, 800, 20);	
-//}
+if(mouseX > rectX-330 && mouseX < rectX+330 && mouseY > 20 && mouseY < 820){
+fill(255,255,255);
+rect(windowWidth/2 -330 , 20, 660, 800, 20);	
+}
 
 }
 
