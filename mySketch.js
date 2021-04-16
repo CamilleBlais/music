@@ -182,21 +182,17 @@ rect1(rectX,8220);
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 	
+} //end of draw
+
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	son1.loop();
-	if(mousePressed && mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(son1.loop && mousePressed){
 	son1.pause();
 	}
         }}
 	
 	
-	
-	
-	
-} //end of draw
-
-
 
 
 
