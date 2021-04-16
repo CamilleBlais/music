@@ -96,8 +96,12 @@ function draw() {
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > rectY && mouseY < rectY+820){
-fill(255,255,255);
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < nog820){
+noFill();
+stroke(200,200,200,140);
+strokeWeight(15);
+stroke(200,200,200,100);
+strokeWeight(5);
 rect(windowWidth/2 -330 , 20, 660, 800, 20);	
 }
 
