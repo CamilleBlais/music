@@ -188,7 +188,8 @@ rect1(rectX,8220);
 	if(function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	son1.pause();
-        }}
+        }
+	}
         }}
 	
 	
