@@ -187,8 +187,7 @@ if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 }
 if(bouton=true){
 	son1.loop();
-	}
-if(bouton=false){
+	}else{
 son1.pause();
 	}
 }
