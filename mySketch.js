@@ -6,6 +6,7 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
+var bouton = false;
 
 //var drops = [];
 
@@ -97,13 +98,13 @@ function draw() {
   ///////////////////////////////////////////////////////////////if mouse hover
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+bouton = true;
 noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,20);
-}else{
-noStroke();
-strokeWeight(0);
+}else){
+bouton = false;
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
