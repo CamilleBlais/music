@@ -21,7 +21,7 @@ createCanvas(windowWidth, 9040);
 	
 rectX = windowWidth/2 -330;
 	
-son1 = loadSound("SON01.wav", loaded);
+son1 = loadSound("SON01.wav");
 
 
 
@@ -30,16 +30,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
   	}
 
 
-
-
-
-
-////////////////////////////fonction loaded"""""
-
-
-function loaded() {
-son1.play();
-	}
+	
 
 }
 
@@ -188,7 +179,14 @@ rect1(rectX,8220);
 }
 
 
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(moussePressed){
+	son1.play();
+	}
+}
 	
+	
+
 }
 
 
