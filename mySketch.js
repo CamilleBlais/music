@@ -179,23 +179,11 @@ strokeWeight(5);
 rect1(rectX,8220);
 }
 	
-	
-//////////////////////////////////////////////////////////////////////////////boolean
 
-	function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	son1.loop();
-	bouton = true;
-        }}
-	function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	son1.pause();
-	bouton = false;
-        }}	
-	
 	
 } //end of draw
 
+//////////////////////////////////////////////////////////////////////////////boolean
 
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
