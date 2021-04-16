@@ -103,6 +103,7 @@ strokeWeight(5);
 rect1(rectX,20);
 }else{
 noStroke();
+strokeWeight(0);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
@@ -111,7 +112,8 @@ stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,840);
 }else{
-noStroke(); 
+noStroke();
+strokeWeight(0);
 }
 
 	
