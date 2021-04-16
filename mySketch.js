@@ -31,13 +31,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
   	}
 
 }
-//////////////////////////////////////////////////////////////////////////////boolean
 
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if (mousePressed){
-	bouton = !bouton;
-        }
-}
 
 /////////////////////////////// fonction draw
 
@@ -195,7 +189,13 @@ if(bouton=true){
 } //end of draw
 
 
+//////////////////////////////////////////////////////////////////////////////boolean
 
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if (mousePressed){
+	bouton = !bouton;
+        }
+}
 
 
 //////////////////////////////////////fonction touchstarted
