@@ -30,12 +30,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
   	}
 
 
-///////////////////////////////////////////////////// definition des fonctions rect
 
-	
-function rect1(rectX, rectY){
-  rect(rectX, rectY, rectXX, rectYY, 20);
-	}
 
 
 
@@ -52,6 +47,11 @@ son1.play();
 
 function draw() {
    
+	
+///////////////////////////////////////////////////// definition des fonctions rect	
+function rect1(rectX, rectY){
+  rect(rectX, rectY, rectXX, rectYY, 20);
+	}
 
    
 for (var i = 0; i < drops.length; i++) {
