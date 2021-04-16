@@ -105,8 +105,7 @@ strokeWeight(5);
 rect1(rectX,20);
 	if(bouton=true){
 	son1.loop();
-	}
-	if(bouton=false){
+	}else{
 	son1.pause();
 	}
 }	
