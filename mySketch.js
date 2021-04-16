@@ -60,8 +60,9 @@ function draw() {
  //        drops[i].show();
 	
 	
-  noStroke();
-	
+  
+  stroke(125,55,125);
+  strokeWeight(5);
   fill(125,55,125);
   rect1(rectX,20);
 	
@@ -98,11 +99,6 @@ function draw() {
   ///////////////////////////////////////////////////////////////if mouse hover
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-bouton = true;
-}else{
-bouton = false;
-}
-if(bouton = true){
 noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
