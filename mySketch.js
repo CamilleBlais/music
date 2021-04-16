@@ -12,7 +12,6 @@ var drops = [];
 
 
 
-
 ////////////////////////////////////////////fonction setup
 
 function setup(){
@@ -29,10 +28,18 @@ for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 
-
-	
-
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////mousepressedfonctiuons hors de draw
+
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(mousePressed){
+	son1.play();
+	}
+}
+
+
 
 /////////////////////////////// fonction draw
 
@@ -179,13 +186,6 @@ rect1(rectX,8220);
 }
 
 
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if(mousePressed()){
-	son1.play();
-	}
-}
-	
-	
 
 }
 
