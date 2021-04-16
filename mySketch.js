@@ -186,8 +186,9 @@ rect1(rectX,8220);
 
 //////////////////////////////////////////////////////////////////////////////////mousepressedfonctiuons hors de draw
 
-function mousePressed(){
+
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if (mousePressed){
 	bouton = !bouton;
 }
 }
