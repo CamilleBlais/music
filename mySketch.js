@@ -15,14 +15,15 @@ var drops = [];
 
 //////////////////////////////fonction preload
 
-
+function preload(){
+son1 = loadSound("SON01.wav");
+}
 
 ////////////////////////////////////////////fonction setup
 
 function setup(){
 createCanvas(windowWidth, 9040);
 
-son1 = createAudio("SON01.wav");
 	
 rectX = windowWidth/2 -330;
 
