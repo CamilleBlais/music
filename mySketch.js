@@ -103,7 +103,7 @@ noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,20);
-}else){
+}else{
 bouton = false;
 }
 	
