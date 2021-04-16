@@ -99,13 +99,16 @@ function draw() {
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 bouton = true;
+}else{
+bouton = false;
+}
+if(bouton = true){
 noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,20);
-}else{
-bouton = false;
-}
+}	
+
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 noFill();
