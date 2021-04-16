@@ -31,15 +31,6 @@ for (var i = 0; i < 7000; i++) {    //light rain
 }
 
 
-//////////////////////////////////////////////////////////////////////////////////mousepressedfonctiuons hors de draw
-
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if(mousePressed){
-	son1.play();
-	}
-}
-
-
 
 /////////////////////////////// fonction draw
 
@@ -186,10 +177,15 @@ rect1(rectX,8220);
 }
 
 
-
 }
 
+//////////////////////////////////////////////////////////////////////////////////mousepressedfonctiuons hors de draw
 
+function mousePressed(){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	son1.play();
+	}
+}
 
 
 //////////////////////////////////////fonction touchstarted
