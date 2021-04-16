@@ -191,10 +191,10 @@ rect1(rectX,8220);
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if (mousePressed){
 	bouton = true;
-}
+        }
 	if(mousePressed){
 	bouton = false;
-}
+        }
 }
 
 
