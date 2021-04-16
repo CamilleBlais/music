@@ -119,70 +119,70 @@ rect1(rectX,20);
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,840);
 }
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,1660);
 }	
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 2480 && mouseY < 3280){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,2480);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 3300 && mouseY < 4100){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,3300);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4120 && mouseY < 4920){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,4120);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4940 && mouseY < 5740){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,4940);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 5760 && mouseY < 6560){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,5760);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 6580 && mouseY < 7380){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,6580);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 7400 && mouseY < 8200){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,7400);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 8220 && mouseY < 9020){
 noFill();
-stroke(200,200,200,100);
+stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,8220);
 }
