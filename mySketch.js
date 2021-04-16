@@ -194,7 +194,7 @@ rect1(rectX,8220);
 	son1.loop();
 	bouton = true;
         }
-}
+}}
 
 
 //////////////////////////////////////fonction touchstarted
