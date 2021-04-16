@@ -184,14 +184,14 @@ rect1(rectX,8220);
 
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-		if(bouton){
-		son1.pause();
-		}
-		else{
 	son1.loop();
 	bouton = true;
-        }
-}}
+        }}
+	function mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	son1.pause();
+	bouton = false;
+        }}	
 	
 	
 } //end of draw
