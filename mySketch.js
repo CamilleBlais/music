@@ -17,7 +17,7 @@ var drops = [];
 
 function setup(){
 createCanvas(windowWidth, 9040);
-background(33,33,33);	
+	
 	
 rectX = windowWidth/2 -330;
 	
@@ -46,7 +46,8 @@ son1.play();
 /////////////////////////////// fonction draw
 
 function draw() {
-   
+background(33,33,33);
+	
 	
 ///////////////////////////////////////////////////// definition des fonctions rect	
 function rect1(rectX, rectY){
