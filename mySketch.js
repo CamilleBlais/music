@@ -19,9 +19,9 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var premierIsPlaying = true;
-var deuxIsPlaying = true;
-var troisIsPlaying = true;
+var premierIsPlaying = false;
+var deuxIsPlaying = false;
+var troisIsPlaying = false;
 var quatreIsPlaying = true;
 var cinqIsPlaying = true;
 var sixIsPlaying = true;
@@ -238,10 +238,10 @@ function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
-	premierIsPlaying = false;
+	premierIsPlaying = true;
 	}else{
 	son1.pause();
-		premierIsPlaying=true;
+		premierIsPlaying=false;
 	}
 	}
 	}	
@@ -250,10 +250,10 @@ function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 	if(deuxIsPlaying){
 	son2.loop();
-	deuxIsPlaying = false;
+	deuxIsPlaying = true;
 	}else{
 	son2.pause();
-		deuxIsPlaying=true;
+		deuxIsPlaying=false;
 	}
 	}
 	}
@@ -262,10 +262,10 @@ function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
 	if(troisIsPlaying){
 	son3.loop();
-	troisIsPlaying = false;
+	troisIsPlaying = true;
 	}else{
 	son3.pause();
-		troisIsPlaying=true;
+		troisIsPlaying=false;
 	}
 	}
 	}
