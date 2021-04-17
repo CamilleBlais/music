@@ -240,7 +240,7 @@ rect1(rectX,9040);
 
 
 function mouseAction1(){
-mousePressed(){
+mousePressed();
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
@@ -250,7 +250,7 @@ mousePressed(){
 	premierIsPlaying=true;
 	}
 	}
-	}	
+		
 }
 
 
