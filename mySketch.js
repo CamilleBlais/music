@@ -225,7 +225,7 @@ function mouseClicked(){
 
 	
 
-
+// if premierIsPlaying is false deuxIsPlaying is true
 
 	
 
