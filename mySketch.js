@@ -6,7 +6,7 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
-let bouton = true;
+var bouton = true;
 
 var mouseX;
 var mouseY;
@@ -192,7 +192,7 @@ rect1(rectX,8220);
 	}
 	}
 	
-	if(bouton=false){
+	if(!bouton){
 	function mousePressed(){
 	son1.pause();
 	bouton=true;
