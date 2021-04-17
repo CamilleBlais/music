@@ -186,13 +186,16 @@ rect1(rectX,8220);
 //////////////////////////////////////////////////////////////////////////////boolean
 
 	function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820 && bouton){
 	son1.loop();
 	bouton=false;
-	}else{
-	son1.pause();
-	bouton=true;
 	}
+	}
+		
+// 		else{
+// 	son1.pause();
+// 	bouton=true;
+// 	}
 		}
 	
 // 	if(!bouton){
