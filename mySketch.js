@@ -189,11 +189,12 @@ rect1(rectX,8220);
 	if(bouton){
 	son1.loop();
 		}
-		else{
+		if(son1.loop && mousePressed){
 	son1.pause();
 	bouton = false;
 	}
-        }}
+        
+	}}
 	
 	
 
