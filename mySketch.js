@@ -234,16 +234,16 @@ rect1(rectX,9040);
 
 //////////////////////////////////////////////////////definitions des functions mousepressed nommé
 
-function mouseAction1(){
-	function mousePressed();
-}
+
+	
+
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
 
 
-
 function mouseAction1(){
+function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
@@ -254,6 +254,7 @@ function mouseAction1(){
 	}
 	}
 	}	
+}
 
 
 // if(!premierIsPlaying){
