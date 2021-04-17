@@ -192,18 +192,12 @@ rect1(rectX,8220);
 	}
 	}
 		
-// 		else{
-// 	son1.pause();
-// 	bouton=true;
-// 	}
-		//}
-	
-// 	if(!bouton){
-// 	function mousePressed(){
-	
-// 	bouton=true;
-// 	}
-// 	}
+	if(!bouton){
+	function mousePressed(){
+	son1.pause();
+	bouton=true;
+}
+}
 		
 
         
