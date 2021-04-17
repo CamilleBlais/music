@@ -246,19 +246,19 @@ function mousePressed(){
 	premierIsPlaying = false;
 	}else{
 	son1.pause();
-		premierIsPlaying=true;
+	premierIsPlaying=true;
 	}
 	}
 	}	
 
-function mouseClicked){
+function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 	if(deuxIsPlaying){
 	son2.loop();
 	deuxIsPlaying = false;
 	}else{
 	son2.pause();
-		deuxIsPlaying=true;
+	deuxIsPlaying=true;
 	}
 	}
 	}
