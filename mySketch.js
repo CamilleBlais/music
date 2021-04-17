@@ -234,6 +234,11 @@ rect1(rectX,9040);
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
+
+if(!premierIsPlaying){
+deuxIsPlaying = true;
+}
+
 function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
