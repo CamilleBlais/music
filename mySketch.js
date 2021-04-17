@@ -214,10 +214,10 @@ rect1(rectX,8220);
 function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
-	son1.pause();
-	premierIsPlaying = false;
-	}if(mouseClicked){
 	son1.loop();
+	premierIsPlaying = false;
+	}else{
+	son1.pause();
 		premierIsPlaying=true;
 	}
 	}
