@@ -19,6 +19,8 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
+var mouseAction1;
+
 var premierIsPlaying = true;
 var deuxIsPlaying = true;
 var troisIsPlaying = true;
@@ -230,16 +232,18 @@ rect1(rectX,9040);
 	
 } //end of draw
 
+//////////////////////////////////////////////////////definitions des functions mousepressed nommé
 
+function mouseAction1(){
+	mousePressed();
+}
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
 
-// if(!premierIsPlaying){
-// deuxIsPlaying = true;
-// }
 
-function mousePressed(){
+
+function mouseAction1(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
@@ -250,6 +254,12 @@ function mousePressed(){
 	}
 	}
 	}	
+
+
+// if(!premierIsPlaying){
+// deuxIsPlaying = true;
+// }
+
 
 function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
@@ -263,17 +273,17 @@ function mouseClicked(){
 	}
 	}
 
-function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
-	if(troisIsPlaying){
-	son3.loop();
-	troisIsPlaying = false;
-	}else{
-	son3.pause();
-		troisIsPlaying=true;
-	}
-	}
-	}
+// function mousePressed(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
+// 	if(troisIsPlaying){
+// 	son3.loop();
+// 	troisIsPlaying = false;
+// 	}else{
+// 	son3.pause();
+// 		troisIsPlaying=true;
+// 	}
+// 	}
+// 	}
 	
 
 // if premierIsPlaying is false deuxIsPlaying is true
