@@ -11,6 +11,7 @@ var son8;
 var son9;
 var son10;
 var son11;
+var son12;
 
 var rect1;
 var rectX;
@@ -29,6 +30,7 @@ var huitIsPlaying = false;
 var neufIsPlaying = false;
 var dixIsPlaying = false;
 var onzeIsPlaying = false;
+var douzeIsPlaying = false;
 
 var mouseX;
 var mouseY;
@@ -44,7 +46,7 @@ son1 = loadSound("SON01.wav");
 ////////////////////////////////////////////fonction setup
 
 function setup(){
-createCanvas(windowWidth, 9040);
+createCanvas(windowWidth, 9860);
 
 	
 rectX = windowWidth/2 -330;
@@ -120,6 +122,10 @@ for (var i = 0; i < drops.length; i++) {
   stroke(221,22,220);
   fill(221,22,220);
   rect1(rectX, 8220);
+	
+  stroke(150,120,150);
+  fill(150,120,150);
+  rect1(rectX, 9040);
    
   ///////////////////////////////////////////////////////////////if mouse hover
 
@@ -200,7 +206,13 @@ stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,8220);
 }
-	
+
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 9040 && mouseY < 9840){
+noFill();
+stroke(200,200,200,125);
+strokeWeight(5);
+rect1(rectX,9040);
+}
 
 	
 
