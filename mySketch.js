@@ -216,7 +216,7 @@ function mouseClicked(){
 	if(premierIsPlaying){
 	son1.loop();
 	premierIsPlaying = false;
-	}else{
+	}if(mouseClicked){
 	son1.pause();
 		premierIsPlaying=true;
 	}
