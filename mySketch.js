@@ -6,7 +6,7 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
-var bouton = true;
+var bouton = false;
 
 var mouseX;
 var mouseY;
@@ -179,31 +179,32 @@ strokeWeight(5);
 rect1(rectX,8220);
 }
 	
-	function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820 && bouton){
-	son1.loop();
-	bouton=false;
-	}
-	}
-		
-	function mousePressed(){
-	if(!bouton){
-	son1.pause();
-	bouton=true;
-}
+
+	
+if(bouton){
+son1.loop();
 }
 	
+if(!bouton){
+son1.pause();
+}
 	
 } //end of draw
 
 
+
+	
 //////////////////////////////////////////////////////////////////////////////boolean
 
+
+
+	function mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	bouton=!bouton;
+	}
+	}
 	
 
-        
-	
-	
 
 
 
