@@ -18,7 +18,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var premierIsPlaying = false;
+var premierIsPlaying = true;
 var deuxIsPlaying = false;
 var troisIsPlaying = false;
 var quatreIsPlaying = false;
