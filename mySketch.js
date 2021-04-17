@@ -196,7 +196,7 @@ rect1(rectX,8220);
 // 	son1.pause();
 // 	bouton=true;
 // 	}
-		}
+		//}
 	
 // 	if(!bouton){
 // 	function mousePressed(){
