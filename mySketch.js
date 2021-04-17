@@ -246,29 +246,29 @@ function mouseClicked(){
 	}
 	}	
 
-function mouseClicked(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
-	if(deuxIsPlaying){
-	son2.loop();
-	deuxIsPlaying = true;
-	}else{
-	son2.pause();
-		deuxIsPlaying=false;
-	}
-	}
-	}
+// function mouseClicked(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
+// 	if(deuxIsPlaying){
+// 	son2.loop();
+// 	deuxIsPlaying = true;
+// 	}else{
+// 	son2.pause();
+// 		deuxIsPlaying=false;
+// 	}
+// 	}
+// 	}
 
-function mouseClicked(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
-	if(troisIsPlaying){
-	son3.loop();
-	troisIsPlaying = true;
-	}else{
-	son3.pause();
-		troisIsPlaying=false;
-	}
-	}
-	}
+// function mouseClicked(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
+// 	if(troisIsPlaying){
+// 	son3.loop();
+// 	troisIsPlaying = true;
+// 	}else{
+// 	son3.pause();
+// 		troisIsPlaying=false;
+// 	}
+// 	}
+// 	}
 	
 
 // if premierIsPlaying is false deuxIsPlaying is true
