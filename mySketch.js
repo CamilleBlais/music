@@ -191,8 +191,9 @@ rect1(rectX,8220);
 	bouton=false;
 	}
 	}
+	
+	if(bouton=false){
 	function mousePressed(){
-	if(!bouton){
 	son1.pause();
 	bouton=true;
 	}
