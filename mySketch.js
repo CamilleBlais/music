@@ -6,7 +6,7 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
-//let bouton = false;
+let bouton = true;
 
 var mouseX;
 var mouseY;
@@ -186,9 +186,12 @@ rect1(rectX,8220);
 
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(bouton){
 	son1.loop();
-	if(son1.loop && mousePressed){
+		}
+		else{
 	son1.pause();
+	bouton = false;
 	}
         }}
 	
