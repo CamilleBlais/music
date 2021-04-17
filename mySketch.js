@@ -19,9 +19,9 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var premierIsPlaying = false;
-var deuxIsPlaying = false;
-var troisIsPlaying = false;
+var premierIsPlaying = true;
+var deuxIsPlaying = true;
+var troisIsPlaying = true;
 var quatreIsPlaying = true;
 var cinqIsPlaying = true;
 var sixIsPlaying = true;
@@ -238,10 +238,10 @@ function mouseClicked(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
-	premierIsPlaying = true;
+	premierIsPlaying = false;
 	}else{
 	son1.pause();
-		premierIsPlaying=false;
+		premierIsPlaying=true;
 	}
 	}
 	}	
