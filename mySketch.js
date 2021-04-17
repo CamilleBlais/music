@@ -20,17 +20,17 @@ var rectXX = 660;
 var rectYY = 800;
 
 var premierIsPlaying = true;
-var deuxIsPlaying = false;
-var troisIsPlaying = false;
-var quatreIsPlaying = false;
-var cinqIsPlaying = false;
-var sixIsPlaying = false;
-var septIsPlaying = false;
-var huitIsPlaying = false;
-var neufIsPlaying = false;
-var dixIsPlaying = false;
-var onzeIsPlaying = false;
-var douzeIsPlaying = false;
+var deuxIsPlaying = true;
+var troisIsPlaying = true;
+var quatreIsPlaying = true;
+var cinqIsPlaying = true;
+var sixIsPlaying = true;
+var septIsPlaying = true;
+var huitIsPlaying = true;
+var neufIsPlaying = true;
+var dixIsPlaying = true;
+var onzeIsPlaying = true;
+var douzeIsPlaying = true;
 
 var mouseX;
 var mouseY;
@@ -41,6 +41,17 @@ var drops = [];
 
 function preload(){
 son1 = loadSound("SON01.wav");
+son2 = loadSound("SON02.wav");
+son3 = loadSound("SON03.wav");
+son4 = loadSound("SON04.wav");
+son5 = loadSound("SON05.wav");
+son6 = loadSound("SON06.wav");
+son7 = loadSound("SON07.wav");
+son8 = loadSound("SON08.wav");
+son9 = loadSound("SON09.wav");
+son10 = loadSound("SON10.wav");
+son11 = loadSound("SON11.wav");
+son12 = loadSound("SON12.wav");
 }
 
 ////////////////////////////////////////////fonction setup
@@ -235,9 +246,32 @@ function mouseClicked(){
 	}
 	}	
 
+function mouseClicked(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
+	if(deuxIsPlaying){
+	son2.loop();
+	deuxIsPlaying = false;
+	}else{
+	son2.pause();
+		deuxIsPlaying=true;
+	}
+	}
+	}
 	
 
 // if premierIsPlaying is false deuxIsPlaying is true
+// var premierIsPlaying = true;
+// var deuxIsPlaying = true;
+// var troisIsPlaying = true;
+// var quatreIsPlaying = true;
+// var cinqIsPlaying = true;
+// var sixIsPlaying = true;
+// var septIsPlaying = true;
+// var huitIsPlaying = true;
+// var neufIsPlaying = true;
+// var dixIsPlaying = true;
+// var onzeIsPlaying = true;
+// var douzeIsPlaying = true;
 
 	
 
