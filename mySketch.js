@@ -6,7 +6,7 @@ var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
-var bouton = false;
+var premierIsPlaying = false;
 
 var mouseX;
 var mouseY;
@@ -180,27 +180,29 @@ rect1(rectX,8220);
 }
 	
 
-	function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	bouton=!bouton;
-	}
-	}	
+	
 
 	
 } //end of draw
 
 
-
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
-if(bouton){
-son1.loop();
-}
+function mouseClicked(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(premierIsPlaying){
+	son1.pause();
+	premierIsPlaying = false;
+	}else{
+	son1.loop();
+		premierIsPlaying=true;
+	}
+	}
+	}	
+
 	
-if(!bouton){
-son1.pause();
-}
+
 
 
 	
