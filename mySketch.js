@@ -189,15 +189,18 @@ rect1(rectX,8220);
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	son1.loop();
 	bouton=false;
-	}
-	}
-	
-	if(!bouton){
-	function mousePressed(){
+	}else{
 	son1.pause();
 	bouton=true;
 	}
-	}
+		}
+	
+// 	if(!bouton){
+// 	function mousePressed(){
+	
+// 	bouton=true;
+// 	}
+// 	}
 		
 
         
