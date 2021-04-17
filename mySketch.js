@@ -263,17 +263,17 @@ function mouseClicked(){
 	}
 	}
 
-// function mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
-// 	if(troisIsPlaying){
-// 	son3.loop();
-// 	troisIsPlaying = false;
-// 	}else{
-// 	son3.pause();
-// 		troisIsPlaying=true;
-// 	}
-// 	}
-// 	}
+function mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
+	if(troisIsPlaying){
+	son3.loop();
+	troisIsPlaying = false;
+	}else{
+	son3.pause();
+		troisIsPlaying=true;
+	}
+	}
+	}
 	
 
 // if premierIsPlaying is false deuxIsPlaying is true
