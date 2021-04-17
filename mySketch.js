@@ -181,13 +181,7 @@ rect1(rectX,8220);
 	
 
 	
-if(bouton){
-son1.loop();
-}
-	
-if(!bouton){
-son1.pause();
-}
+
 	
 } //end of draw
 
@@ -196,7 +190,13 @@ son1.pause();
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
-
+if(bouton){
+son1.loop();
+}
+	
+if(!bouton){
+son1.pause();
+}
 
 	function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
