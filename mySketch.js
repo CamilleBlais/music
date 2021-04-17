@@ -1,12 +1,34 @@
 ///////////////////////////////variables
 var i = 0;
 var son1;
+var son2;
+var son3;
+var son4;
+var son5;
+var son6;
+var son7;
+var son8;
+var son9;
+var son10;
+var son11;
+
 var rect1;
 var rectX;
 var rectY;
 var rectXX = 660;
 var rectYY = 800;
+
 var premierIsPlaying = false;
+var deuxIsPlaying = false;
+var troisIsPlaying = false;
+var quatreIsPlaying = false;
+var cinqIsPlaying = false;
+var sixIsPlaying = false;
+var septIsPlaying = false;
+var huitIsPlaying = false;
+var neufIsPlaying = false;
+var dixIsPlaying = false;
+var onzeIsPlaying = false;
 
 var mouseX;
 var mouseY;
@@ -194,7 +216,7 @@ function mouseClicked(){
 	if(premierIsPlaying){
 	son1.pause();
 	premierIsPlaying = false;
-	}else{
+	}if(mouseClicked){
 	son1.loop();
 		premierIsPlaying=true;
 	}
