@@ -19,7 +19,11 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-let VideoAudio1;
+let VideoAudio;
+var nameAudio;
+var boovar;
+var positionY;
+var positionYY;
 
 var premierIsPlaying = true;
 var deuxIsPlaying = true;
@@ -70,6 +74,24 @@ for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 
+	
+	function VideoAudio(nameAudio,boovar, positionY, positionYY){
+	mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+	if(boovar){
+	nameAudio.loop();
+	boovar = false;
+	}else{
+	nameAudio.pause();
+	boovar=true;
+	}
+	}
+	}}
+	
+	
+	VideoAudio(son1,premierIsPlaying,20,820);
+	
+	
 }
 
 
@@ -240,29 +262,29 @@ rect1(rectX,9040);
 
 
 
-class VideoAudio{
-	constructor(nameAudio, namebooVar, positionY, positionYY){
-		this.nameAudio = nameAudio;
-		this.namebooVar = namebooVar;
-		this.positionY = positionY;
-		this.positionYY = positionYY;
-	}
+// class VideoAudio{
+// 	constructor(nameAudio, namebooVar, positionY, positionYY){
+// 		this.nameAudio = nameAudio;
+// 		this.namebooVar = namebooVar;
+// 		this.positionY = positionY;
+// 		this.positionYY = positionYY;
+// 	}
 	
-	mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > this.positionY && mouseY < this.positionYY){
-		if(this.namebooVar){
-		this.nameAudio.loop();
-		this.namebooVar = false;
-		}else{
-		this.nameAudio.pause();
-		this.namebooVar=true;
-		}
-	}
-	}
-	} //end classe VideoAudio
+// 	mousePressed(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > this.positionY && mouseY < this.positionYY){
+// 		if(this.namebooVar){
+// 		this.nameAudio.loop();
+// 		this.namebooVar = false;
+// 		}else{
+// 		this.nameAudio.pause();
+// 		this.namebooVar=true;
+// 		}
+// 	}
+// 	}
+// 	} //end classe VideoAudio
 
 
-VideoAudio1.mousePressed();
+
 
 	
 //////////////////////////////////////////////////////////////////////////////boolean
@@ -288,17 +310,17 @@ VideoAudio1.mousePressed();
 // }
 
 
-function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
-	if(deuxIsPlaying){
-	son2.loop();
-	deuxIsPlaying = false;
-	}else{
-	son2.pause();
-	deuxIsPlaying=true;
-	}
-	}
-	}
+// function mousePressed(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
+// 	if(deuxIsPlaying){
+// 	son2.loop();
+// 	deuxIsPlaying = false;
+// 	}else{
+// 	son2.pause();
+// 	deuxIsPlaying=true;
+// 	}
+// 	}
+// 	}
 
 // function mousePressed(){
 // 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
