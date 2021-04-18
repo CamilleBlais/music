@@ -68,7 +68,7 @@ rectX = windowWidth/2 -330;
 //////// les object VideoAudio
 	
 VideoAudio1 = new VideoAudio(son1, premierIsPlaying, 20, 820);
-
+VideoAudio1.mousePressed();
 
 
 for (var i = 0; i < 7000; i++) {    //light rain
@@ -233,10 +233,6 @@ strokeWeight(5);
 rect1(rectX,9040);
 }
 
-	
-	
-VideoAudio1.mousePressed();
-	
 	
 	
 	
