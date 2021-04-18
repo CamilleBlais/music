@@ -88,8 +88,7 @@ boovar=true;
 }
 }}
 	
-	
-VideoAudio(son1,premierIsPlaying,20,820);
+
 	
 
 }
@@ -251,7 +250,7 @@ rect1(rectX,9040);
 }
 
 	
-	
+VideoAudio(son1,premierIsPlaying,20,820);
 	
 } //end of draw
 
