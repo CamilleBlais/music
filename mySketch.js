@@ -19,7 +19,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-let VideoAudio;
+let VideoAudio1;
 
 var premierIsPlaying = true;
 var deuxIsPlaying = true;
