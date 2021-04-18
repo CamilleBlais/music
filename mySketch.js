@@ -19,7 +19,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var mouseAction1;
+let VideoAudio1;
 
 var premierIsPlaying = true;
 var deuxIsPlaying = true;
@@ -56,13 +56,19 @@ son11 = loadSound("SON11.wav");
 son12 = loadSound("SON12.wav");
 }
 
-////////////////////////////////////////////fonction setup
+////////////////////////////////////////////////////////////fonction setup
 
 function setup(){
 createCanvas(windowWidth, 9860);
 
 	
 rectX = windowWidth/2 -330;
+	
+	
+//////// les object VideoAudio
+	
+VideoAudio1 = new VideoAudio(son1, premierIsPlaying, 20, 820);
+
 
 
 for (var i = 0; i < 7000; i++) {    //light rain
@@ -72,7 +78,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
 }
 
 
-/////////////////////////////// fonction draw
+///////////////////////////////////////////////////////// fonction draw
 
 function draw() {
 background(33,33,33);
@@ -228,31 +234,56 @@ rect1(rectX,9040);
 }
 
 	
-
-	
 } //end of draw
 
-//////////////////////////////////////////////////////definitions des functions mousepressed nommé
+
+
+
+//////////////////////////////////////////////////////definitions de la classe
+
+
+
+class VideoAudio{
+	constructor(nameAudio, namebooVar, positionY, positionYY){
+		this.nameAudio = nameAudio;
+		this.namebooVar = namebooVar;
+		this.positionY = positionY;
+		this.positionYY = positionYY;
+	}
+	
+	mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > this.positionY && mouseY < this.positionYY){
+		if(this.namebooVar){
+		this.nameAudio.loop();
+		this.namebooVar = false;
+		}else{
+		this.nameAudio.pause();
+		this.namebooVar=true;
+		}
+	}
+	}
+	} //end classe VideoAudio
+
+
+
 
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
 
 
-//function mouseAction1(){
-function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if(premierIsPlaying){
-	son1.loop();
-	premierIsPlaying = false;
-	}else{
-	son1.pause();
-	premierIsPlaying=true;
-	}
-	};
-	
-		
-}
+
+// function mousePressed(){
+// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+// 	if(premierIsPlaying){
+// 	son1.loop();
+// 	premierIsPlaying = false;
+// 	}else{
+// 	son1.pause();
+// 	premierIsPlaying=true;
+// 	}
+// 	};			
+// }
 
 
 // if(!premierIsPlaying){
