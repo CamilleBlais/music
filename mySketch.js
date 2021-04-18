@@ -19,7 +19,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-let VideoAudio;
+var VideoAudio;
 var nameAudio;
 var boovar;
 var positionY;
