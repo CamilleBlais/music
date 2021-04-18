@@ -266,9 +266,9 @@ class VideoAudio{
 	}
 	} //end classe VideoAudio
 
-
+function mousePRessed(){
 VideoAudio1.mousePressed();
-
+}
 	
 //////////////////////////////////////////////////////////////////////////////boolean
 
