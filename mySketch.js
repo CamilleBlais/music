@@ -234,6 +234,12 @@ rect1(rectX,9040);
 }
 
 	
+	
+VideoAudio1.mousePressed();
+	
+	
+	
+	
 } //end of draw
 
 
