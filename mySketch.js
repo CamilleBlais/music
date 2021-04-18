@@ -74,20 +74,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 
-	
-function VideoAudio(nameAudio,boovar, positionY, positionYY){
-function mousePressed(){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-if(boovar){
-nameAudio.loop();
-boovar = false;
-}else{
-nameAudio.pause();
-boovar=true;
-}
-}
-}}
-	
+		
 
 	
 
@@ -100,7 +87,7 @@ function draw() {
 background(33,33,33);
 	
 	
-///////////////////////////////////////////////////// definition des fonctions rect1	
+///////////////////////////////////////////////////// definition de la fonction rect1	
 function rect1(rectX, rectY){
   rect(rectX, rectY, rectXX, rectYY, 20);
 	}
@@ -256,8 +243,22 @@ VideoAudio(son1,premierIsPlaying,20,820);
 
 
 
+/////////////////////////////////////////////////////////////////////////////definitions
 
-//////////////////////////////////////////////////////definitions
+
+function VideoAudio(nameAudio,boovar, positionY, positionYY){
+function mousePressed(){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+if(boovar){
+nameAudio.loop();
+boovar = false;
+}else{
+nameAudio.pause();
+boovar=true;
+}
+}
+}}
+
 
 
 // 	function VideoAudio(nameAudio,boovar, positionY, positionYY){
