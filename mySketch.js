@@ -19,7 +19,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-let VideoAudio1;
+let VideoAudio;
 
 var premierIsPlaying = true;
 var deuxIsPlaying = true;
@@ -64,11 +64,6 @@ createCanvas(windowWidth, 9860);
 	
 rectX = windowWidth/2 -330;
 	
-	
-//////// les object VideoAudio
-	
-VideoAudio1 = new VideoAudio(son1, premierIsPlaying, 20, 820);
-
 
 
 for (var i = 0; i < 7000; i++) {    //light rain
@@ -84,7 +79,7 @@ function draw() {
 background(33,33,33);
 	
 	
-///////////////////////////////////////////////////// definition des fonctions rect	
+///////////////////////////////////////////////////// definition des fonctions rect1	
 function rect1(rectX, rectY){
   rect(rectX, rectY, rectXX, rectYY, 20);
 	}
@@ -266,7 +261,7 @@ class VideoAudio{
 	}
 	} //end classe VideoAudio
 
-function mousePRessed(){
+function mousePressed(){
 VideoAudio1.mousePressed();
 }
 	
@@ -293,7 +288,7 @@ VideoAudio1.mousePressed();
 // }
 
 
-function mouseClicked(){
+function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 	if(deuxIsPlaying){
 	son2.loop();
