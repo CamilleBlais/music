@@ -74,22 +74,26 @@ for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 
+	
+		function mousePressed(positionY, positionYY){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+		if(premierIsPlaying){
+		son1.loop();
+		premierIsPlaying = false;
+		}else{
+		son1.pause();
+		premierIsPlaying=true;
+		}
+	}
+	}
+	} 
+	
+	
+	
+	
 }
 
-////////////////////////////////////////////////////////////////////
 
-function VideoAudio(positionY, positionYY){
-function mousePressed(){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-if(premierIsPlaying){
-son1.loop();
-premierIsPlaying= false;
-}else{
-son1.pause();
-premierIsPlaying =true;
-}
-}
-}}
 
 
 ///////////////////////////////////////////////////////// fonction draw
@@ -247,20 +251,19 @@ strokeWeight(5);
 rect1(rectX,9040);
 }
 
-
+mousePressed(20,820);
 	
 } //end of draw
 
 	
-VideoAudio(20,820);
 
+
+	
 
 /////////////////////////////////////////////////////////////////////////////definitions
 
 
-
-
-
+// 
 
 // 	function VideoAudio(nameAudio,boovar, positionY, positionYY){
 // 	mousePressed(){
@@ -279,31 +282,27 @@ VideoAudio(20,820);
 // 	VideoAudio(son1,premierIsPlaying,20,820);
 	
 	
-
-
-
-// class VideoAudio{
-// 	constructor(nameAudio, namebooVar, positionY, positionYY){
-// 		this.nameAudio = nameAudio;
-// 		this.namebooVar = namebooVar;
-// 		this.positionY = positionY;
-// 		this.positionYY = positionYY;
-// 	}
 	
-// 	mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > this.positionY && mouseY < this.positionYY){
-// 		if(this.namebooVar){
-// 		this.nameAudio.loop();
-// 		this.namebooVar = false;
-// 		}else{
-// 		this.nameAudio.pause();
-// 		this.namebooVar=true;
-// 		}
-// 	}
-// 	}
-// 	} //end classe VideoAudio
 
 
+//end classe VideoAudio
+
+////////////////////////////////////////////////////////////////////
+
+// function VideoAudio(positionY, positionYY){
+// function mousePressed(){
+// if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+// if(premierIsPlaying){
+// son1.loop();
+// premierIsPlaying= false;
+// }else{
+// son1.pause();
+// premierIsPlaying =true;
+// }
+// }
+// }}
+
+// VideoAudio(20,820);
 
 
 	
