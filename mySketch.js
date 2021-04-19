@@ -25,18 +25,18 @@ var BooVar;
 var positionZZ;
 var positionYY;
 
-var premierIsPlaying = true;
-var deuxIsPlaying = true;
-var troisIsPlaying = true;
-var quatreIsPlaying = true;
-var cinqIsPlaying = true;
-var sixIsPlaying = true;
-var septIsPlaying = true;
-var huitIsPlaying = true;
-var neufIsPlaying = true;
-var dixIsPlaying = true;
-var onzeIsPlaying = true;
-var douzeIsPlaying = true;
+// var premierIsPlaying = true;
+// var deuxIsPlaying = true;
+// var troisIsPlaying = true;
+// var quatreIsPlaying = true;
+// var cinqIsPlaying = true;
+// var sixIsPlaying = true;
+// var septIsPlaying = true;
+// var huitIsPlaying = true;
+// var neufIsPlaying = true;
+// var dixIsPlaying = true;
+// var onzeIsPlaying = true;
+// var douzeIsPlaying = true;
 
 var mouseX;
 var mouseY;
@@ -245,18 +245,18 @@ rect1(rectX,9040);
 
 
 function mousePressed(){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
-	if(BooVar){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(son1.isPlaying){
 	son1.play();
-	BooVar = false;
+	son1.isPlaying = true;
 	}else{
 	son1.pause();
-	BooVar=true;
+	son1.isPlaying=false;
 	}
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying);
+//mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying);
 
 //LA seule chose qui marche pas cest nameAudio. Peut-être.... créer une fonction genre AudioA et AudioAA. AudioA c'est juste son1.loop(); et AudioAA c'est son1.pause();
 //.... AudioA();
