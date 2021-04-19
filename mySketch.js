@@ -70,11 +70,24 @@ rectX = windowWidth/2 -330;
 for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
+	
+	
+
+function mousePressed(positionZZ, positionYY){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
+	if(premierIsPlaying){
+	son1.loop();
+	premierIsPlaying = false;
+	}else{
+	son1.pause();
+	premierIsPlaying=true;
+	}
+	}
+	}
 
 	
 
-	
-	} // end setup
+} // end setup
 	
 
 
@@ -241,17 +254,6 @@ rect1(rectX,9040);
 
 
 
-function mousePressed(positionZZ, positionYY){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
-	if(premierIsPlaying){
-	son1.loop();
-	premierIsPlaying = false;
-	}else{
-	son1.pause();
-	premierIsPlaying=true;
-	}
-	}
-	}
 
 
 mousePressed(20,820);	
