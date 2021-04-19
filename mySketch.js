@@ -255,10 +255,8 @@ function mousePressed(){
 	}
 	}
 
-mousePressed(){
-positionZZ = 20;
-positionYY = 820;
-}
+mousePressed(positionZZ = 20,positionYY = 820);
+
 	//mousePressed(20,820);
 	
 
