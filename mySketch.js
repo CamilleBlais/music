@@ -78,15 +78,15 @@ for (var i = 0; i < 7000; i++) {    //light rain
 
 ////////////////////////////////////////////////////////////////////
 
-function VideoAudio(nameAudio,boovar, positionY, positionYY){
-mousePressed(){
+function VideoAudio(positionY, positionYY){
+function mousePressed(){
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-if(boovar){
-nameAudio.loop();
-boovar = false;
+if(premierIsPlaying){
+son1.loop();
+premierIsPlaying= false;
 }else{
-nameAudio.pause();
-boovar=true;
+son1.pause();
+premierIsPlaying =true;
 }
 }
 }}
@@ -248,7 +248,7 @@ rect1(rectX,9040);
 }
 
 	
-VideoAudio(son1,premierIsPlaying,20,820);
+VideoAudio(20,820);
 
 	
 } //end of draw
