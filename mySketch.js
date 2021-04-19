@@ -247,12 +247,12 @@ strokeWeight(5);
 rect1(rectX,9040);
 }
 
-	
-VideoAudio(20,820);
 
 	
 } //end of draw
 
+	
+VideoAudio(20,820);
 
 
 /////////////////////////////////////////////////////////////////////////////definitions
