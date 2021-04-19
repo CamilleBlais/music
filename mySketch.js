@@ -246,12 +246,12 @@ rect1(rectX,9040);
 
 function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if(son1.isPlaying){
-	son1.play();
-	son1.isPlaying = true;
-	}else{
+	if(son1.isPlaying()){
 	son1.pause();
-	son1.isPlaying=false;
+	//son1.isPlaying = true;
+	}else{
+	son1.loop();
+	//son1.isPlaying=false;
 	}
 	}
 	}
