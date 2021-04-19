@@ -19,9 +19,6 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var VideoAudio;
-var nameAudio;
-var boovar;
 var positionY;
 var positionYY;
 
@@ -254,11 +251,11 @@ strokeWeight(5);
 rect1(rectX,9040);
 }
 
-mousePressed(20,820);
+
 	
 } //end of draw
 
-	
+mousePressed(20,820);	
 
 
 	
