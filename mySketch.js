@@ -71,26 +71,10 @@ for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 	
-	
 
-function mousePressed(){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-	if(premierIsPlaying){
-	son1.loop();
-	premierIsPlaying = false;
-	}else{
-	son1.pause();
-	premierIsPlaying=true;
-	}
-	}
-	}
-
-//mousePressed(20,820);	
-	
 
 } // end setup
 	
-
 
 
 
@@ -255,7 +239,19 @@ rect1(rectX,9040);
 
 
 
+function mousePressed(){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(premierIsPlaying){
+	son1.loop();
+	premierIsPlaying = false;
+	}else{
+	son1.pause();
+	premierIsPlaying=true;
+	}
+	}
+	}
 
+//mousePressed(20,820);	
 
 
 	
