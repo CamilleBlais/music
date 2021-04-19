@@ -85,6 +85,7 @@ if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < posit
 	}
 	}
 
+mousePressed(20,820);	
 	
 
 } // end setup
@@ -255,8 +256,6 @@ rect1(rectX,9040);
 
 
 
-
-mousePressed(20,820);	
 
 
 	
