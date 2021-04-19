@@ -19,6 +19,8 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
+var nameAudio;
+var BooVar = true;
 var positionZZ;
 var positionYY;
 
@@ -238,22 +240,22 @@ rect1(rectX,9040);
 
 /////////////////////////////////////////////////////////////////////////////definition de mousepressed
 
-function mousePressed(positionZZ, positionYY){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
-	if(premierIsPlaying){
-	son1.loop();
-	premierIsPlaying = false;
+function mousePressed(nameAudio, BooVar){
+	if(BooVar){
+	nameAudio.loop();
+	BooVar = false;
 	}else{
-	son1.pause();
-	premierIsPlaying=true;
+	nameAudio.pause();
+	BooVar=true;
 	}
 	}
-	}
-
-mousePressed(20,820);	
-
-
 	
+
+
+
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	mousePressed(son1, premierIsPlaying);
+}	
 
 
 
