@@ -240,6 +240,10 @@ rect1(rectX,9040);
 
 /////////////////////////////////////////////////////////////////////////////definition de mousepressed
 
+positionZZ = 20;
+positionYY = 820;
+
+
 function mousePressed(positionZZ, positionYY){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(premierIsPlaying){
@@ -255,7 +259,7 @@ function mousePressed(positionZZ, positionYY){
 
 
 
-	mousePressed(20,820);
+	//mousePressed(20,820);
 	
 
 
