@@ -246,16 +246,16 @@ rect1(rectX,9040);
 function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(BooVar){
-	son1.loop();
+	nameAudio.loop();
 	BooVar = false;
 	}else{
-	son1.pause();
+	nameAudio.pause();
 	BooVar=true;
 	}
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying);
+mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying, nameAudio = son1);
 
 	//mousePressed(20,820);
 	
