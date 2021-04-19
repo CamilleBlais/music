@@ -256,7 +256,7 @@ function mousePressed(){
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820, nameAudio=son1);
+mousePressed(positionZZ = 20,positionYY = 820, nameAudio="SON01.wav");
 
 //LA seule chose qui marche pas cest nameAudio. Peut-être.... créer une fonction genre AudioA et AudioAA. AudioA c'est juste son1.loop(); et AudioAA c'est son1.pause();
 //.... AudioA();
