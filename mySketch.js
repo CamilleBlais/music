@@ -19,8 +19,8 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-//var nameAudio;
-//var BooVar = true;
+var nameAudio;
+var BooVar;
 var positionZZ;
 var positionYY;
 
@@ -245,17 +245,17 @@ rect1(rectX,9040);
 
 function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
-	if(premierIsPlaying){
+	if(BooVar){
 	son1.loop();
-	premierIsPlaying = false;
+	BooVar = false;
 	}else{
 	son1.pause();
-	premierIsPlaying=true;
+	BooVar=true;
 	}
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820);
+mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying);
 
 	//mousePressed(20,820);
 	
