@@ -19,7 +19,7 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var positionY;
+var positionZZ;
 var positionYY;
 
 var premierIsPlaying = true;
@@ -241,8 +241,8 @@ rect1(rectX,9040);
 
 
 
-function mousePressed(positionY, positionYY){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+function mousePressed(positionZZ, positionYY){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(premierIsPlaying){
 	son1.loop();
 	premierIsPlaying = false;
