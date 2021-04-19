@@ -91,22 +91,6 @@ function rect1(rectX, rectY){
   rect(rectX, rectY, rectXX, rectYY, 20);
 	}
 	
-	
-	
-function mousePressed(positionY, positionYY){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-	if(premierIsPlaying){
-	son1.loop();
-	premierIsPlaying = false;
-	}else{
-	son1.pause();
-	premierIsPlaying=true;
-	}
-	}
-	}
-	
-	
-	
    
 for (var i = 0; i < drops.length; i++) {
          drops[i].fall();
@@ -254,6 +238,21 @@ rect1(rectX,9040);
 
 	
 } //end of draw
+
+
+
+function mousePressed(positionY, positionYY){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
+	if(premierIsPlaying){
+	son1.loop();
+	premierIsPlaying = false;
+	}else{
+	son1.pause();
+	premierIsPlaying=true;
+	}
+	}
+	}
+
 
 mousePressed(20,820);	
 
