@@ -73,8 +73,8 @@ for (var i = 0; i < 7000; i++) {    //light rain
 	
 	
 
-function mousePressed(positionZZ, positionYY){
-if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
+function mousePressed(){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(premierIsPlaying){
 	son1.loop();
 	premierIsPlaying = false;
@@ -85,7 +85,7 @@ if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < posit
 	}
 	}
 
-mousePressed(20,820);	
+//mousePressed(20,820);	
 	
 
 } // end setup
