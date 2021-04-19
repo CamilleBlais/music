@@ -70,7 +70,18 @@ rectX = windowWidth/2 -330;
 for (var i = 0; i < 7000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
-	
+
+function mousePressed(){
+if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
+	if(premierIsPlaying){
+	son1.loop();
+	premierIsPlaying = false;
+	}else{
+	son1.pause();
+	premierIsPlaying=true;
+	}
+	}
+	}
 
 
 } // end setup
