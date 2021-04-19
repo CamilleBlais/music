@@ -86,12 +86,9 @@ for (var i = 0; i < 7000; i++) {    //light rain
 		}
 	}
 	}
-	} 
 	
+	} // end setup
 	
-	
-	
-}
 
 
 
