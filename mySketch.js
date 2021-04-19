@@ -19,7 +19,8 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var nameAudio;
+var nameAudioA;
+var nameAudioB;
 var BooVar;
 var positionZZ;
 var positionYY;
@@ -246,18 +247,19 @@ rect1(rectX,9040);
 function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(BooVar){
-	nameAudio.loop();
+	nameAudioA;
 	BooVar = false;
 	}else{
-	nameAudio.pause();
+	nameAudioB;
 	BooVar=true;
 	}
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying, nameAudio = son1);
+mousePressed(positionZZ = 20,positionYY = 820, BooVar = premierIsPlaying, nameAudioA = son1.loop(), nameAudioB = son1.pause());
 
-	//mousePressed(20,820);
+//LA seule chose qui marche pas cest nameAudio. Peut-être.... créer une fonction genre AudioA et AudioAA. AudioA c'est juste son1.loop(); et AudioAA c'est son1.pause();
+//.... AudioA();
 	
 
 
