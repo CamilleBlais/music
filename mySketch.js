@@ -226,7 +226,7 @@ rect1(rectX,9040);
 
 
 
-function mousePressed(var positionZZ, var positionYY){
+function mousePressed(positionZZ, positionYY){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(son1.isPlaying()){
 	son1.pause();
