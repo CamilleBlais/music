@@ -226,17 +226,24 @@ rect1(rectX,9040);
 
 
 
-function mousePressed(positionZZ, positionYY){
-	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
+function mousePressed(){
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
 	if(son1.isPlaying()){
 	son1.pause();
 	}else{
 	son1.loop();
 	}
 	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
+	if(son2.isPlaying()){
+	son2.pause();
+	}else{
+	son2.loop();
 	}
+	}
+	}  //end function mousepressed
 
-mousePressed(20,820);
+
 
 //LA seule chose qui marche pas cest nameAudio/file de son.  :(
 	
