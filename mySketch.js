@@ -231,6 +231,7 @@ function mousePressed(){
 	if(son1.isPlaying()){
 	son1.pause();
 	}else{
+	TurnOff();
 	son1.loop();
 	}
 	}
@@ -238,14 +239,17 @@ function mousePressed(){
 	if(son2.isPlaying()){
 	son2.pause();
 	}else{
+	TurnOff();
 	son2.loop();
 	}
 	}
 	}  //end function mousepressed
 
+function TurnOff(){
+	son1.pause();
+	son2.pause();
+}
 
-
-//LA seule chose qui marche pas cest nameAudio/file de son.  :(
 	
 
 
