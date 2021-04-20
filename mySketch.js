@@ -19,24 +19,6 @@ var rectY;
 var rectXX = 660;
 var rectYY = 800;
 
-var nameAudio;
-//var nameAudioB;
-//var BooVar;
-var positionZZ;
-var positionYY;
-
-// var premierIsPlaying = true;
-// var deuxIsPlaying = true;
-// var troisIsPlaying = true;
-// var quatreIsPlaying = true;
-// var cinqIsPlaying = true;
-// var sixIsPlaying = true;
-// var septIsPlaying = true;
-// var huitIsPlaying = true;
-// var neufIsPlaying = true;
-// var dixIsPlaying = true;
-// var onzeIsPlaying = true;
-// var douzeIsPlaying = true;
 
 var mouseX;
 var mouseY;
@@ -244,7 +226,7 @@ rect1(rectX,9040);
 
 
 
-function mousePressed(){
+function mousePressed(var positionZZ, var positionYY){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionZZ && mouseY < positionYY){
 	if(son1.isPlaying()){
 	son1.pause();
@@ -254,121 +236,12 @@ function mousePressed(){
 	}
 	}
 
-mousePressed(positionZZ = 20,positionYY = 820, son1="SON02.wav");
+mousePressed(20,820);
 
-//LA seule chose qui marche pas cest nameAudio. Peut-être.... créer une fonction genre AudioA et AudioAA. AudioA c'est juste son1.loop(); et AudioAA c'est son1.pause();
-//.... AudioA();
+//LA seule chose qui marche pas cest nameAudio/file de son.  :(
 	
 
 
-
-
-// 
-
-// 	function VideoAudio(nameAudio,boovar, positionY, positionYY){
-// 	mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-// 	if(boovar){
-// 	nameAudio.loop();
-// 	boovar = false;
-// 	}else{
-// 	nameAudio.pause();
-// 	boovar=true;
-// 	}
-// 	}
-// 	}}
-	
-	
-// 	VideoAudio(son1,premierIsPlaying,20,820);
-	
-	
-	
-
-
-//end classe VideoAudio
-
-////////////////////////////////////////////////////////////////////
-
-// function VideoAudio(positionY, positionYY){
-// function mousePressed(){
-// if(mouseX > rectX && mouseX < rectX+660 && mouseY > positionY && mouseY < positionYY){
-// if(premierIsPlaying){
-// son1.loop();
-// premierIsPlaying= false;
-// }else{
-// son1.pause();
-// premierIsPlaying =true;
-// }
-// }
-// }}
-
-// VideoAudio(20,820);
-
-
-	
-//////////////////////////////////////////////////////////////////////////////boolean
-
-
-
-
-// function mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 20 && mouseY < 820){
-// 	if(premierIsPlaying){
-// 	son1.loop();
-// 	premierIsPlaying = false;
-// 	}else{
-// 	son1.pause();
-// 	premierIsPlaying=true;
-// 	}
-// 	};			
-// }
-
-
-// if(!premierIsPlaying){
-// deuxIsPlaying = true;
-// }
-
-
-// function mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
-// 	if(deuxIsPlaying){
-// 	son2.loop();
-// 	deuxIsPlaying = false;
-// 	}else{
-// 	son2.pause();
-// 	deuxIsPlaying=true;
-// 	}
-// 	}
-// 	}
-
-// function mousePressed(){
-// 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
-// 	if(troisIsPlaying){
-// 	son3.loop();
-// 	troisIsPlaying = false;
-// 	}else{
-// 	son3.pause();
-// 		troisIsPlaying=true;
-// 	}
-// 	}
-// 	}
-	
-
-// if premierIsPlaying is false deuxIsPlaying is true
-// var premierIsPlaying = true;
-// var deuxIsPlaying = true;
-// var troisIsPlaying = true;
-// var quatreIsPlaying = true;
-// var cinqIsPlaying = true;
-// var sixIsPlaying = true;
-// var septIsPlaying = true;
-// var huitIsPlaying = true;
-// var neufIsPlaying = true;
-// var dixIsPlaying = true;
-// var onzeIsPlaying = true;
-// var douzeIsPlaying = true;
-
-	
 
 
 
