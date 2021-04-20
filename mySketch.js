@@ -30,16 +30,16 @@ var drops = [];
 function preload(){
 son1 = loadSound("SON01.wav");
 son2 = loadSound("SON02.wav");
-son3 = loadSound("SON03.wav");
-son4 = loadSound("SON04.wav");
-son5 = loadSound("SON05.wav");
-son6 = loadSound("SON06.wav");
-son7 = loadSound("SON07.wav");
-son8 = loadSound("SON08.wav");
-son9 = loadSound("SON09.wav");
-son10 = loadSound("SON10.wav");
-son11 = loadSound("SON11.wav");
-son12 = loadSound("SON12.wav");
+// son3 = loadSound("SON03.wav");
+// son4 = loadSound("SON04.wav");
+// son5 = loadSound("SON05.wav");
+// son6 = loadSound("SON06.wav");
+// son7 = loadSound("SON07.wav");
+// son8 = loadSound("SON08.wav");
+// son9 = loadSound("SON09.wav");
+// son10 = loadSound("SON10.wav");
+// son11 = loadSound("SON11.wav");
+// son12 = loadSound("SON12.wav");
 }
 
 ////////////////////////////////////////////////////////////fonction setup
