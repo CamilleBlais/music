@@ -23,23 +23,23 @@ var rectYY = 800;
 var mouseX;
 var mouseY;
 
-//var drops = [];
+var drops = [];
 
 //////////////////////////////fonction preload
 
 function preload(){
 son1 = loadSound("SON01.wav");
 son2 = loadSound("SON02.wav");
-// son3 = loadSound("SON03.wav");
-// son4 = loadSound("SON04.wav");
-// son5 = loadSound("SON05.wav");
-// son6 = loadSound("SON06.wav");
-// son7 = loadSound("SON07.wav");
-// son8 = loadSound("SON08.wav");
-// son9 = loadSound("SON09.wav");
-// son10 = loadSound("SON10.wav");
-// son11 = loadSound("SON11.wav");
-// son12 = loadSound("SON12.wav");
+son3 = loadSound("SON03.wav");
+son4 = loadSound("SON04.wav");
+son5 = loadSound("SON05.wav");
+son6 = loadSound("SON06.wav");
+son7 = loadSound("SON07.wav");
+son8 = loadSound("SON08.wav");
+son9 = loadSound("SON09.wav");
+son10 = loadSound("SON10.wav");
+son11 = loadSound("SON11.wav");
+son12 = loadSound("SON12.wav");
 }
 
 ////////////////////////////////////////////////////////////fonction setup
@@ -52,9 +52,9 @@ rectX = windowWidth/2 -330;
 	
 
 
-//for (var i = 0; i < 7000; i++) {    //light rain
-//   	drops[i] = new Drop();
- // 	}
+for (var i = 0; i < 7000; i++) {    //light rain
+  	drops[i] = new Drop();
+ 	}
 
 
 } // end setup
@@ -74,10 +74,10 @@ function rect1(rectX, rectY){
 	}
 	
    
-// for (var i = 0; i < drops.length; i++) {
-//          drops[i].fall();
-//          drops[i].show();
-// 	}
+for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+         drops[i].show();
+	}
 	
   
   stroke(125,55,125);
@@ -243,11 +243,101 @@ function mousePressed(){
 	son2.loop();
 	}
 	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
+	if(son3.isPlaying()){
+	son3.pause();
+	}else{
+	TurnOff();
+	son3.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 2480 && mouseY < 3280){
+	if(son4.isPlaying()){
+	son4.pause();
+	}else{
+	TurnOff();
+	son4.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 3300 && mouseY < 4100){
+	if(son5.isPlaying()){
+	son5.pause();
+	}else{
+	TurnOff();
+	son5.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4120 && mouseY < 4920){
+	if(son6.isPlaying()){
+	son6.pause();
+	}else{
+	TurnOff();
+	son6.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4940 && mouseY < 5740){
+	if(son7.isPlaying()){
+	son7.pause();
+	}else{
+	TurnOff();
+	son7.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 5760 && mouseY < 6560){
+	if(son8.isPlaying()){
+	son8.pause();
+	}else{
+	TurnOff();
+	son8.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 6580 && mouseY < 7380){
+	if(son9.isPlaying()){
+	son9.pause();
+	}else{
+	TurnOff();
+	son9.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 7400 && mouseY < 8200){
+	if(son10.isPlaying()){
+	son10.pause();
+	}else{
+	TurnOff();
+	son10.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 8220 && mouseY < 9020){
+	if(son11.isPlaying()){
+	son11.pause();
+	}else{
+	TurnOff();
+	son11.loop();
+	}
+	}
+	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 9040 && mouseY < 9840){
+	if(son12.isPlaying()){
+	son12.pause();
+	}else{
+	TurnOff();
+	son12.loop();
+	}
+	}
 	}  //end function mousepressed
 
 function TurnOff(){
 	son1.pause();
 	son2.pause();
+	son3.pause();
+	son4.pause();
+	son5.pause();
+	son6.pause();
+	son7.pause();
+	son8.pause();
+	son9.pause();
+	son10.pause();
+	son11.pause();
+	son12.pause();
 }
 
 	
