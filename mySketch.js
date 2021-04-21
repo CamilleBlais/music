@@ -266,7 +266,7 @@ rect(rectX+5,8225,650,790,20);
 	for (var j = 0; j < drops2.length; j++) {
     	drops2[j].fall();
    	drops2[j].show();
-  	}}
+  	}
 }
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 9040 && mouseY < 9840){
