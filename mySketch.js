@@ -183,7 +183,7 @@ strokeWeight(5);
 rect1(rectX,1660);
 frameRate(60);
 noStroke();
-fill(40,15,mouseX/2,150);
+fill(40,15,mouseX/3,150);
 rect(rectX+5,1665,650,790,20);
 }	
 	
@@ -199,6 +199,10 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,3300);
+frameRate(60);
+noStroke();
+fill(mouseX/3,25,190,150);
+rect(rectX+5,3305,650,790,20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4120 && mouseY < 4920){
@@ -248,6 +252,10 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,9040);
+frameRate(60);
+noStroke();
+fill(25,mouseX/3,200,150);
+rect(rectX+5,9045,650,790,20);
 }
 
 
