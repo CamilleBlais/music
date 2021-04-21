@@ -189,6 +189,7 @@ frameRate(0.7);
 noStroke();
 fill(r,g,b,150);
 rect(rectX+5,1665,650,790,20);
+frameRate(60)
 fill(41,5,mouseX/5,125);
 rect(rectX+80,1740,500,640,20);
 }	
