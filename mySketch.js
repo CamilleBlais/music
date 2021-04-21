@@ -162,6 +162,18 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,840);
+frameRate(1);
+fill(r,b,g,100);
+rect(rectX+5,845,650,180,20);
+frameRate(10);
+fill(r,b,g,200);
+rect(rectX+5,1030,650,180,20);
+frameRate(1);
+fill(r,b,g,80);
+rect(rectX+5,1215,650,180,20);
+frameRate(10);
+fill(r,b,g,150);
+rect(rectX+5,1400,650,180,20);
 }
 
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
