@@ -77,7 +77,7 @@ for (var j = 0; j < 1000; j++) {    // moderate rain
 ///////////////////////////////////////////////////////// fonction draw
 
 function draw() {
-background(250,250,255);
+background(mouseY/40,25,mouseX/5);
 frameRate(60);
 
 r = random(0,255);
@@ -90,7 +90,7 @@ function rect1(rectX, rectY){
   rect(rectX, rectY, rectXX, rectYY, 20);
 	}
 	
-   
+   rect(windowWidth/2
 
 	
   
