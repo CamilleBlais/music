@@ -90,7 +90,6 @@ function rect1(rectX, rectY){
   rect(rectX, rectY, rectXX, rectYY, 20);
 	}
 	
-   rect(windowWidth/2
 
 	
   
