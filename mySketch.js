@@ -70,7 +70,7 @@ rectX = windowWidth/2 -330;
 ///////////////////////////////////////////////////////// fonction draw
 
 function draw() {
-background(33,33,33);
+background(200,200,200);
 frameRate(60);
 
 r = random(0,255);
