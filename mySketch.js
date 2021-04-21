@@ -181,9 +181,9 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,1660);
-frameRate(2);
+frameRate(60);
 noStroke();
-fill(r,g,mouseX/2,150);
+fill(40,15,mouseX/2,150);
 rect(rectX+5,1665,650,790,20);
 }	
 	
