@@ -25,7 +25,6 @@ var mouseY;
 
 var drops = [];
 
-var vid2;
 
 //////////////////////////////fonction preload
 
@@ -42,7 +41,6 @@ son9 = loadSound("SON09.wav");
 son10 = loadSound("SON10.wav");
 son11 = loadSound("SON11.wav");
 son12 = loadSound("SON12.wav");
-vid2 = createVideo("partyson2.mp4");
 }
 
 ////////////////////////////////////////////////////////////fonction setup
@@ -91,7 +89,6 @@ for (var i = 0; i < drops.length; i++) {
   stroke(25,111,159);
   fill(25,111,159);
   rect1(rectX,840);
-  vid2(windowWidth/2-325, 915, 650,650);
   
   stroke(125,35,200);
   fill(125,35,200);
@@ -140,6 +137,7 @@ noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,20);
+
 }	
 
 	
@@ -241,11 +239,9 @@ function mousePressed(){
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 840 && mouseY < 1640){
 	if(son2.isPlaying()){
 	son2.pause();
-	vid2.pause();
 	}else{
 	TurnOff();
 	son2.loop();
-	vid2.loop();
 	}
 	}
 	if(mouseX > rectX && mouseX < rectX+660 && mouseY > 1660 && mouseY < 2460){
@@ -343,7 +339,6 @@ function TurnOff(){
 	son10.pause();
 	son11.pause();
 	son12.pause();
-	vid2.pause();
 }
 
 	
