@@ -101,7 +101,7 @@ function rect1(rectX, rectY){
   rect1(rectX,1660);
 
   stroke(25,126,200);
-  fill(252,169,133);
+  fill(1,57,170);
   rect1(rectX,2480);
 	
   stroke(225,10,156);
@@ -191,7 +191,7 @@ strokeWeight(5);
 rect1(rectX,2480);
 frameRate(40);
 noStroke();
-fill(110,110,125);
+fill(100,100,115);
 rect(rectX+5,2485,650,790,20);
 	
 	for (var i = 0; i < drops.length; i++) {
