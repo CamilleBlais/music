@@ -92,51 +92,51 @@ function rect1(rectX, rectY){
   
   stroke(125,55,125);
   strokeWeight(5);
-  fill(125,55,125);
+  fill(221,212,232);
   rect1(rectX,20);
 
   stroke(25,111,159);
-  fill(25,111,159);
+  fill(145,210,144);
   rect1(rectX,840);
   
   stroke(125,35,200);
-  fill(125,35,200);
+  fill(111,183,214);
   rect1(rectX,1660);
 
   stroke(25,126,200);
-  fill(25,126,200);
+  fill(252,169,133);
   rect1(rectX,2480);
 	
   stroke(225,10,156);
-  fill(225,10,156);
+  fill(179,226,221);
   rect1(rectX,3300);
   
   stroke(160,20,25);
-  fill(160,20,25);
+  fill(253,222,238);
   rect1(rectX, 4120);
    
   stroke(100,200,55);
-  fill(100,200,55);
+  fill(117,137,191);
   rect1(rectX, 4940);
    
   stroke(100,200,55);
-  fill(100,200,55);
+  fill(72,181,163);
   rect1(rectX, 5760);
    
   stroke(222,22,22);
-  fill(222,22,22);
+  fill(193,179,214);
   rect1(rectX, 6580);
    
   stroke(22,22,220);
-  fill(22,22,220);
+  fill(253,202,163);
   rect1(rectX, 7400);
    
   stroke(221,22,220);
-  fill(221,22,220);
+  fill(181,225,174);
   rect1(rectX, 8220);
 	
   stroke(150,120,150);
-  fill(150,120,150);
+  fill(154,206,223);
   rect1(rectX, 9040);
    
   ///////////////////////////////////////////////////////////////if mouse hover
@@ -148,10 +148,12 @@ strokeWeight(5);
 rect1(rectX,20);
 frameRate(1)
 noStroke();
-fill(r,b,g,255);
+fill(r,b,g,100);
 rect(rectX+5,25,650,790,20);
-fill(r,b,g,200);
+fill(r,b,g,150);
 rect(rectX+80,100,500,640,20);
+fill(r,b,g,240);
+rect(rectX+180,220,300,400,20);
 }	
 
 	
