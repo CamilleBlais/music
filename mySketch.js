@@ -27,7 +27,7 @@ var rectYY = 800;
 var mouseX;
 var mouseY;
 
-//var drops = [];
+var drops = [];
 
 
 //////////////////////////////fonction preload
@@ -57,9 +57,9 @@ rectX = windowWidth/2 -330;
 	
 
 
-// for (var i = 0; i < 7000; i++) {    //light rain
-//   	drops[i] = new Drop();
-//  	}
+ for (var i = 0; i < 1000; i++) {    //light rain
+   	drops[i] = new Drop();
+  	}
 
 
 } // end setup
@@ -84,10 +84,7 @@ function rect1(rectX, rectY){
 	}
 	
    
-// for (var i = 0; i < drops.length; i++) {
-//          drops[i].fall();
-//          drops[i].show();
-// 	}
+
 	
   
   stroke(125,55,125);
@@ -192,6 +189,15 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,2480);
+frameRate(40);
+noStroke();
+fill(110,110,125);
+rect(rectX+5,2485,650,790,20);
+	
+	for (var i = 0; i < drops.length; i++) {
+         drops[i].fall();
+          drops[i].show();
+ 	}
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 3300 && mouseY < 4100){
