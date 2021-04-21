@@ -47,7 +47,7 @@ son12 = loadSound("SON12.wav");
 
 function setup(){
 createCanvas(windowWidth, 9860);
-
+frameRate(5);
 	
 rectX = windowWidth/2 -330;
 	
