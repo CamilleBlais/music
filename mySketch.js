@@ -1,5 +1,9 @@
 ///////////////////////////////variables
 var i = 0;
+var r = 0;
+var b = 0;
+var g = 0;
+
 var son1;
 var son2;
 var son3;
@@ -67,6 +71,7 @@ for (var i = 0; i < 7000; i++) {    //light rain
 
 function draw() {
 background(33,33,33);
+frameRate(60);
 	
 	
 ///////////////////////////////////////////////////// definition de la fonction rect1	
@@ -137,7 +142,10 @@ noFill();
 stroke(200,200,200,100);
 strokeWeight(5);
 rect1(rectX,20);
-
+frameRate(1)
+noStroke();
+fill(r,b,g);
+rect(rectX+5,25,650,790,20); 
 }	
 
 	
