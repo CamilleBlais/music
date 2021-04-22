@@ -195,7 +195,7 @@ w = random(60,175);
 fill(m,v,w,190);
 rect(rectX+5,1665,650,790,20);
 fill(141,5,125,125);
-rect(rectX+20,160,620,760,20);
+rect(rectX+20,1675,620,760,20);
 fill(185,5,100,175);
 rect(rectX+50,1700,560,300,20);
 fill(15,155,120,175);
@@ -314,7 +314,6 @@ function mousePressed(){
 	son2.pause();
 	}else{
 	TurnOff();
-	son2.volume(1.0);
 	son2.loop();
 	}
 	}
