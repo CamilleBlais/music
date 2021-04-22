@@ -6,7 +6,7 @@
 
 function Drop() {
   this.x = random(windowWidth/2-325, windowWidth/2+325);
-  this.y = random(2480, 3560 && 5700, 6900);
+  this.y = random(2480, 9900);
   this.len = random(5, 20);
   this.yspeed = random(2,8);
 
@@ -15,7 +15,7 @@ function Drop() {
     this.yspeed = this.yspeed + 0.04;
 
     if (this.y > height) {
-      this.y = random(2480, 3560 && 5700,6900);
+      this.y = random(2480, 9900);
       this.yspeed = random(2,8);
     }
   }
