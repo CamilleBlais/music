@@ -191,9 +191,9 @@ rect(rectX+5,1665,650,790,20);
 fill(141,5,125,125);
 rect(rectX+20,1680,620,760,20);
 fill(185,5,100,155);
-rect(rectX+50,1680,560,500,20);
+rect(rectX+50,1690,560,500,20);
 fill(15,155,120,155);
-rect(rectX+50,1900,560,500,20);
+rect(rectX+50,1900,560,510,20);
 }	
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 2480 && mouseY < 3280){
