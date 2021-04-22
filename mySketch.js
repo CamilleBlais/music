@@ -314,6 +314,7 @@ function mousePressed(){
 	son2.pause();
 	}else{
 	TurnOff();
+	son2.volume(0.5);
 	son2.loop();
 	}
 	}
