@@ -60,7 +60,7 @@ rectX = windowWidth/2 -330;
 	
 
 
- for (var i = 0; i < 2500; i++) {    //light rain
+ for (var i = 0; i < 6000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 	
