@@ -60,7 +60,7 @@ rectX = windowWidth/2 -330;
 	
 
 
- for (var i = 0; i < 1000; i++) {    //light rain
+ for (var i = 0; i < 2000; i++) {    //light rain
    	drops[i] = new Drop();
   	}
 	
@@ -77,7 +77,7 @@ for (var j = 0; j < 1000; j++) {    // moderate rain
 ///////////////////////////////////////////////////////// fonction draw
 
 function draw() {
-background(mouseY/40,25,mouseX/5);
+background(mouseY/54,15,mouseX/9);
 frameRate(60);
 
 r = random(0,255);
@@ -188,9 +188,11 @@ frameRate(0.7);
 noStroke();
 fill(r,g,b,150);
 rect(rectX+5,1665,650,790,20);
-frameRate(30);
-fill(41,5,mouseX/5,125);
-rect(rectX+65,1715,620,640,20);
+frameRate(20);
+fill(141,5,125,125);
+rect(rectX+65,1715,570,655,20);
+fill(185,5,100,125);
+rect(rectX+90,1740,300,300,20);
 }	
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 2480 && mouseY < 3280){
