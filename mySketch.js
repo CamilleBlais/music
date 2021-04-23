@@ -240,8 +240,8 @@ frameRate(3);
 rect1(rectX,4120);
 fill(r,g-100,b-100,100);
 rect(rectX+20, 4150, 620, 238, 20);
-rect(rectX+20, 4418, 620, 238, 20);
-rect(rectX+20, 4678, 620, 238, 20);
+rect(rectX+20, 4408, 620, 238, 20);
+rect(rectX+20, 4658, 620, 238, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4940 && mouseY < 5740){
@@ -269,14 +269,14 @@ strokeWeight(5);
 frameRate(1);
 rect1(rectX,5760);
 fill(r, 140,200,200);
-ellipse(rectX+325, 6015, 200);
-ellipse(rectX+325, 6015, 100);
+ellipse(rectX+325, 5915, 200);
+ellipse(rectX+325, 5915, 100);
 fill(170, g,200,200);
-ellipse(rectX+325, 6265, 200);
-ellipse(rectX+325, 6265, 100);
+ellipse(rectX+325, 6165, 200);
+ellipse(rectX+325, 6165, 100);
 fill(170, 89,b,200);
 ellipse(rectX+325, 6515, 200);
-ellipse(rectX+325, 6515, 200);
+ellipse(rectX+325, 6515, 100);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 6580 && mouseY < 7380){
