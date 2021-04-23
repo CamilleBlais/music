@@ -286,8 +286,8 @@ strokeWeight(5);
 rect1(rectX,6580);
 frameRate(0.5);
 fill(r+100,g+100,b+100, 150);
-rect(rectX-150, 6600, 300, 300, 20);
-rect(rectX-150, 6950, 300, 300, 20);
+rect(rectX+150, 6600, 300, 300, 20);
+rect(rectX+150, 6970, 300, 300, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 7400 && mouseY < 8200){
