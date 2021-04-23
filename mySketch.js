@@ -223,25 +223,25 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,3300);
-frameRate(3);
+frameRate(2);
 noStroke();
-w = random(0,75);
+w = random(0,105);
 fill(mouseX/5,25,180,150);
 rect(rectX+5,3305,650,790,20);
-fill(25,25,w,100);
-rect(rectX+255,3325,150,750);
+fill(15,15,w,120);
+rect(rectX+255,3325,150,750, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4120 && mouseY < 4920){
 noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
-frameRate(5);
+frameRate(3);
 rect1(rectX,4120);
 fill(r,g-100,b-100,100);
-rect(rectX+20, 4150, 238, 620);
-rect(rectX+20, 4413, 238, 620);
-rect(rectX+20, 4676, 238, 620);
+rect(rectX+20, 4150, 620, 238, 20);
+rect(rectX+20, 4413, 620, 238, 20);
+rect(rectX+20, 4676, 620, 238, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4940 && mouseY < 5740){
@@ -249,6 +249,10 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,4940);
+fill(200,200,200,200);
+ellipse(rectX +100, 5100, 75);
+fill(80,80,156,100);
+rect(rectX+5, 5300, 650 , 435, 20)
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 5760 && mouseY < 6560){
