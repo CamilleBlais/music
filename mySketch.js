@@ -223,17 +223,25 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,3300);
-frameRate(60);
+frameRate(3);
 noStroke();
-fill(mouseX/3,25,190,150);
+w = random(0,75);
+fill(mouseX/5,25,180,150);
 rect(rectX+5,3305,650,790,20);
+fill(25,25,w,100);
+rect(rectX+255,3325,150,750);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4120 && mouseY < 4920){
 noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
+frameRate(5);
 rect1(rectX,4120);
+fill(r,g-100,b-100,100);
+rect(rectX+20, 4150, 238, 620);
+rect(rectX+20, 4413, 238, 620);
+rect(rectX+20, 4676, 238, 620);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 4940 && mouseY < 5740){
