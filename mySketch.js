@@ -240,7 +240,7 @@ frameRate(3);
 rect1(rectX,4120);
 fill(r,g-100,b-100,100);
 rect(rectX+20, 4150, 620, 238, 20);
-rect(rectX+20, 4408, 620, 238, 20);
+rect(rectX+20, 4400, 620, 238, 20);
 rect(rectX+20, 4658, 620, 238, 20);
 }
 	
@@ -275,8 +275,8 @@ fill(170, g,200,200);
 ellipse(rectX+325, 6165, 200);
 ellipse(rectX+325, 6165, 100);
 fill(170, 89,b,200);
-ellipse(rectX+325, 6515, 200);
-ellipse(rectX+325, 6515, 100);
+ellipse(rectX+325, 6415, 200);
+ellipse(rectX+325, 6415, 100);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 6580 && mouseY < 7380){
@@ -284,6 +284,10 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,6580);
+frameRate(0.5);
+fill(r+100,g+100,b+100, 150):
+rect(rectX-150, 6600, 300, 300, 20);
+rect(rectX-150, 6900, 300, 300, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 7400 && mouseY < 8200){
@@ -291,6 +295,11 @@ noFill();
 stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,7400);
+fill(15,15,15);
+ellipse(rectX-100, 7650, 200);
+fill(200,190, 229);
+ellipse(rectX-50, 7600,30);
+ellipse(rectX+50, 7600,30);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 8220 && mouseY < 9020){
@@ -318,6 +327,10 @@ frameRate(60);
 noStroke();
 fill(25,mouseX/3,200,150);
 rect(rectX+5,9045,650,790,20);
+fill(55,75,b+25, 100);
+rect(rectX+5, 9060, 640, 55, 20);
+rect(rectX+5, 9760, 640, 55, 20); 
+
 }
 
 
