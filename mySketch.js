@@ -287,7 +287,7 @@ rect1(rectX,6580);
 frameRate(0.5);
 fill(r+30,g+25,b+30, 150);
 rect(rectX+175, 6600, 300, 300, 20);
-rect(rectX+175, 7000, 300, 300, 20);
+rect(rectX+175, 7030, 300, 300, 20);
 }
 	
 if(mouseX > rectX && mouseX < rectX+660 && mouseY > 7400 && mouseY < 8200){
