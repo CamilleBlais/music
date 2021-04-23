@@ -285,7 +285,7 @@ stroke(200,200,200,125);
 strokeWeight(5);
 rect1(rectX,6580);
 frameRate(0.5);
-fill(r+100,g+100,b+100, 150):
+fill(r+100,g+100,b+100, 150);
 rect(rectX-150, 6600, 300, 300, 20);
 rect(rectX-150, 6900, 300, 300, 20);
 }
